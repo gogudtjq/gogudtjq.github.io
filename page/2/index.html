@@ -85,21 +85,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">Category</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Code/">Java Code</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Server/">Server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-AWT/">JAVA AWT</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-Calendar/">JAVA Calendar</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-File/">JAVA File</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Server/">Server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sorting/">Sorting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swap/">Swap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">13</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">22</span></li></ul>
               </li>
             
           
@@ -160,6 +160,795 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
+        <a href="/2018/01/26/Java-TCP-Server/" >
+  Java TCP Server
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-TCP-Server/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Server/">Server</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="종단-시스템-Host"><a href="#종단-시스템-Host" class="headerlink" title="종단 시스템 : Host"></a>종단 시스템 : Host</h3><p>네트워크 라인을 통해서 더 연결되지 않는 것<br>ex)pc, smart phone, printer, scanner</p>
+<p>Router : hardware<br>host끼리 상호데이터를 교환할 수 있도록하는 장비</p>
+<p>protocol : 통신규약<br>종단시스템과 종단시스템의 통신 약속</p>
+<p>internet -&gt; inter Network ( 포괄적인 통신)</p>
+<hr>
+<h3 id="protocol"><a href="#protocol" class="headerlink" title="protocol"></a>protocol</h3><p>TCP : Transmission Control Protocol</p>
+<blockquote>
+<p>IP 프로토콜 위에서 연결형 서비스를 지원하는 전송계층 프로토콜로, 인터넷 환경에서 기본으로 사용한다<br>신사적인 프로토콜<br>ex) 전화 -&gt; 상대방 연결 : 반드시 연결이 되어야 통신이 이루어진다.<br>데이터의 경계가 없다<br>1 대 1 통신이다.</p>
+</blockquote>
+<p>UDP : user datagram protocol</p>
+<blockquote>
+<p>인터넷에서 정보를 주고받을 때, 서로 주고받는 형식이 아닌 한쪽에서 일방적으로 보내는 방식의 통신 프로토콜이다.<br>비 연결형<br>ex)편지, 지상파 방송 : 일방적을 보내고 확인작업을 하지않는다.<br>데이터의 경계가 있다(데이터의 크기가 정해져 있음)<br>1 대1  통신이 가능(unicast)<br>1 대 다(boradcast)<br>다 대 다 (multicast)</p>
+</blockquote>
+<hr>
+<h3 id="Packet"><a href="#Packet" class="headerlink" title="Packet"></a>Packet</h3><p>제어정보가 결합된 형태로 전송되는 실제 데이터<br>String, Object(dto)<br>TCP/UDP<br>IP, Port<br>의 정보를 가지고 있다.</p>
+<blockquote>
+<p>IP :  InterNet Protocol<br>IPv4  0 ~ 255 <em> 4 ex) 192.168.10.42<br>IPv6  0 ~ 255 </em> 6 ex)<br>127.0.0.1  -&gt;  자기자신을 접근할수있는 ip주소다.</p>
+</blockquote>
+<hr>
+<h3 id="Port-Number"><a href="#Port-Number" class="headerlink" title="Port Number"></a>Port Number</h3><p>인터넷의 전송 제어 프로토콜(TCP)이나 사용자 데이터그램 프로토콜(UDP)에서<br>애플리케이션이 상호 통신을 위해 사용하는 가상의 논리적 통신 연결단.<br>-프로세스를 구분하기 위한 구분 번호-<br>IP 주소는 인터넷에 존재하는 호스트(PC)를 식별할 수 있으나<br>최종주체인 프로세스(프로그램)를 식별하지 못하기때문에<br>프로세스를 식별하기 위한 수치(사용할수 없는 프로세스 0 ~ 1024 : Sys에서 사용하고있다.)</p>
+<hr>
+<h3 id="7-Layer"><a href="#7-Layer" class="headerlink" title="7 Layer"></a>7 Layer</h3><p>   1계층 : Physical layer  (물리층)<br>   2계층 : Data link layer (데이터링크층) 주소를 해더에 첨부<br>   3계층 : Network layer   (네트워크층) IP address 첨부하는 부분<br>   4계층 : Transport layer (전송층) 트렌스 port주소를 지정<br>   5계층 : Session layer   (세션층) 세션부분을 동기화<br>   6계층 : Presentation layer (표현층) 보안,데이터의 압축 그리고 확장<br>   7계층 : Application layer (응용층) 어플리 프로그램</p>
+<hr>
+<h3 id="통신순서"><a href="#통신순서" class="headerlink" title="통신순서"></a>통신순서</h3><ol>
+<li>Socket버전 확인</li>
+<li>binding -&gt; IP, Port번호 설정</li>
+<li>listen<br> [ java에서는 1,2,3 작업을 묶었다.]</li>
+<li>accept &lt;—————– client connect에서 접속을 기달린다<br>통신 성공!!</li>
+<li>Packet<br>  1) Packet 수신 recv(받는용)      –(리눅스같은경우)Read로 되어있다.<br>  2) Packet 송신 send(보내는용)  –(리눅스같은경우)Write로 되어있다.</li>
+</ol>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-메모리-영역/" >
+  Java 메모리 영역
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-메모리-영역/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="Stack-영역"><a href="#Stack-영역" class="headerlink" title="Stack 영역"></a>Stack 영역</h3><ul>
+<li>레퍼런스 변수들이 저장되는 영역</li>
+</ul>
+<blockquote>
+<p>메소드 실행시 생성되고 메소드 작업이 종료되면 할당되었던 메모리 공간은 비워진다.</p>
+</blockquote>
+<h3 id="Heap-영역"><a href="#Heap-영역" class="headerlink" title="Heap 영역"></a>Heap 영역</h3><ul>
+<li>new : 주소를 던져 주는 연산자</li>
+<li>new로 생성한 것들이 존재하는 영역</li>
+<li>가비지 컬렉션이 주기적으로 정리</li>
+</ul>
+<blockquote>
+<p>new 연산자로 생성된 객체와 배열을 저장하는 공간으로 클래스 영역에 로드된 클래스만 생성 가능하다.<br>Garbage Collector를 통해 메모리를 반환하게 됩니다.</p>
+</blockquote>
+<h3 id="Static-영역"><a href="#Static-영역" class="headerlink" title="Static 영역"></a>Static 영역</h3><ul>
+<li>클래스 로드(메소드/멤버변수는 이름만)</li>
+<li>static 변수</li>
+<li>String 클래스</li>
+<li>문자열 상수</li>
+</ul>
+<blockquote>
+<p>Static 영역에 한번들어가면 프로그램이 종료 될 시점까지 저장되어있다.<br>지속적으로 사용하는 것들을 저장 시켜놓는다.<br>Static 영역은 계속 쌓이므로 사용하는데에 주의</p>
+</blockquote>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-String타입-equals-indexOf-lastindexOf-length-replace-split-toUpperCas-toLowerCas-toString-trim-valueOf-contains-charAt-concat/" >
+  Java String타입(equals/indexOf/lastindexOf/length/replace/split/toUpperCas/toLowerCas/toString/trim/valueOf/contains/charAt/concat)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-String타입-equals-indexOf-lastindexOf-length-replace-split-toUpperCas-toLowerCas-toString-trim-valueOf-contains-charAt-concat/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p>구조<br>ex) String 변수명 = “ 문자열 “ ;</p>
+<p>문자열이 직접 변수에 저장되는 것이 아니고,<br>문자열은 String 객체로 생성되고<br>변수는 String 객체를 참조합니다</p>
+<h4 id="String-타입-메소드"><a href="#String-타입-메소드" class="headerlink" title="String 타입 메소드"></a>String 타입 메소드</h4><p><strong>equals()</strong>  비교 함수 : 원본 문자열과 매개값을 비교하여 동일한지 비교후<br>true 또는 false를 리턴한다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"한"</span>;</span><br><span class="line"><span class="keyword">if</span> ( str.equals(<span class="string">"한"</span>) )&#123;</span><br><span class="line"><span class="comment">// str = 한이면 실행된다.</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><strong>indexOf</strong>  문자열 내에서 주어진 문자열의 위치를 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)                  </span><br><span class="line">String str  = <span class="string">"abcabcabc"</span>;</span><br><span class="line"><span class="keyword">int</span> i = str.indexOf(<span class="string">"c"</span>);      →  str 문자열중에 c의 위치를 찾는다.</span><br><span class="line">System.out.println(i);           진행 방향  [→]</span><br></pre></td></tr></table></figure></p>
+<p><strong>lastIndexOf</strong> indexOf와 동일한 역활을 하나 뒤에서부터 위치를 찾는다.</p>
+<p><strong>length</strong> 총 문자의 수를 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abcabcabc"</span>;</span><br><span class="line"><span class="keyword">int</span> len  = str.length();</span><br><span class="line">System.out.println(len);   →  str의 글자수가 len의 들어간다.</span><br></pre></td></tr></table></figure></p>
+<p><strong>replace</strong> 수정<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"A*B*C*D"</span>;        </span><br><span class="line">String repStr = str.replace(<span class="string">"*"</span>,<span class="string">"-"</span>); <span class="comment">//replace("지울것","지운공간에 추가할것");</span></span><br><span class="line">System.out.println(repStr);</span><br></pre></td></tr></table></figure></p>
+<p><strong>split</strong> 주어진값을 기준으로 짤라서 배열에 저장한다<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"홍길동-24-2001/10/11-서울시 "</span>;</span><br><span class="line">String spl[] = str.split(<span class="string">"-"</span>); <span class="comment">// split("기준");</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>toUpperCase</strong> 알파벳 대문자를 변환한 문자열 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abCdE"</span>;</span><br><span class="line">String upstr = str.toUpperCase();</span><br></pre></td></tr></table></figure></p>
+<p><strong>toLowerCase</strong> 알파벳 소문자를 변환한 문자열 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abCdE"</span>;</span><br><span class="line">String lostr = str.toLowerCase();</span><br></pre></td></tr></table></figure></p>
+<p><strong>toString</strong> 문자를 출력<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str  = <span class="string">"반갑습니다"</span> ;</span><br><span class="line">System.out.println(str11.toString());</span><br></pre></td></tr></table></figure></p>
+<p><strong>trim</strong> 앞 뒤 공백을 제거한 새로운 문자열을 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"반 갑  습  니  다"</span>;</span><br><span class="line">String trimStr =str.trim();</span><br></pre></td></tr></table></figure></p>
+<p><strong>valueOf</strong> 숫자 -&gt; 문자열로 바꿔준다<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> num    = <span class="number">123</span>;</span><br><span class="line">String iStr = String.valueOf(num);</span><br></pre></td></tr></table></figure></p>
+<p><strong>contains</strong> 탐색<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str =<span class="string">"서울시 강남구"</span>;</span><br><span class="line">String findStr =<span class="string">"강남구"</span>;</span><br><span class="line"><span class="keyword">boolean</span> YN   = str.contains(findStr);</span><br></pre></td></tr></table></figure></p>
+<p><strong>charAt</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)   <span class="comment">//주소    0  1  2  3 4</span></span><br><span class="line">String str14 =<span class="string">"가나다라마"</span>;</span><br><span class="line"><span class="keyword">char</span> ch1 = str14.charAt(<span class="number">2</span>);   →  <span class="comment">//출력결과 : ch1에는 '다'가 저장된다.</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>concat</strong> 문자열 연결<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)                     </span><br><span class="line">str1 =<span class="string">"abc"</span>;</span><br><span class="line">str2 =<span class="string">"def"</span>;</span><br><span class="line">String conStr = str1.concat(str2);</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-Array배열-2차원-배열/" >
+  Java Array배열/2차원 배열
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-Array배열-2차원-배열/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h3><p>같은 자료형의 모음 , 정적인 개념<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span>[]</span><br><span class="line"><span class="keyword">int</span>[]                 <span class="comment">//index number로 관리된다</span></span><br><span class="line"><span class="keyword">double</span>[]</span><br><span class="line">String []</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">자료형  배열변수명[] = <span class="keyword">new</span> 자료형[배열 갯수]; → <span class="keyword">int</span> arrNum[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">  └&gt;자료형은 앞뒤 동일하게 써야된다.                                  </span><br><span class="line">자료형[]  배열변수명  ↘</span><br><span class="line">                     이렇게도 사용 가능하다.</span><br><span class="line">자료형  []배열변수명  ↗</span><br><span class="line"></span><br><span class="line">ex)    </span><br><span class="line">    <span class="keyword">int</span> arrNum[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];     </span><br><span class="line">                   ↓</span><br><span class="line">    arrNum[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line">    arrNum[<span class="number">1</span>] = <span class="number">20</span>;</span><br><span class="line">    arrNum[<span class="number">2</span>] = <span class="number">30</span>;                   </span><br><span class="line">    arrNum[<span class="number">3</span>] = <span class="number">40</span>;</span><br><span class="line">    arrNum[<span class="number">4</span>] = <span class="number">50</span>;   </span><br><span class="line"></span><br><span class="line"> 배열의 길이 표현방법 : 배열변수명.length    (arrNum.length)</span><br></pre></td></tr></table></figure>
+<h3 id="2차원-배열"><a href="#2차원-배열" class="headerlink" title="2차원 배열"></a>2차원 배열</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">   자료형 배열변수명[열][행]; →  열 세로 행 가로</span><br><span class="line">  <span class="keyword">int</span> array[][] =&#123;                   </span><br><span class="line">                    &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;,   </span><br><span class="line">                    &#123;<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;,   →  자료형 배열변수명[][] =  <span class="keyword">new</span> 자료형[<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line">                    &#123;<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>&#125;</span><br><span class="line">                  &#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-반복문-for문-while문-do-while문-continue-break/" >
+  Java 반복문(for문/while문/do while문)/continue&amp;break
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-반복문-for문-while문-do-while문-continue-break/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.<br>반복문 종류는 for,while, do~while</p>
+<h3 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex) <span class="keyword">for</span> ( 초기화; 조건; 연산식 )&#123;     <span class="keyword">for</span> (<span class="keyword">int</span>  i = <span class="number">0</span>  ; i &lt; <span class="number">10</span> ;  i++ )&#123;    </span><br><span class="line">    <span class="comment">//조건이 참일시 실행되는 부분   →  // i가 0 부터 i &lt; 10 일때 까지</span></span><br><span class="line">                                     <span class="comment">//i++(하나씩 증가하며) 반복으로 실행</span></span><br><span class="line">   &#125;                                &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while-문"><a href="#while-문" class="headerlink" title="while 문"></a>while 문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">     초기화                             <span class="keyword">int</span> w = <span class="number">0</span> ;</span><br><span class="line">     <span class="keyword">while</span>(조건)&#123;                       <span class="keyword">while</span> ( w &lt; <span class="number">10</span> ) &#123;</span><br><span class="line">     <span class="comment">//조건이 참일시 실행되는 부분  →     //w가 0 부터 w &lt; 10 일때 까지</span></span><br><span class="line">                                        <span class="comment">//w++(하나씩 증가하며) 반복</span></span><br><span class="line">     연산식                              w++;</span><br><span class="line">     &#125;                                  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="do-while-문"><a href="#do-while-문" class="headerlink" title="do while 문"></a>do while 문</h3><p>while같은경우엔 검사 실행 검사 실행의 과정이라면<br>do while 같은경우는 실행후 검사 실행후 검사,최소 한번은 실행이 된다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">    <span class="keyword">do</span> &#123;                                                        </span><br><span class="line">     <span class="comment">//실행                                                 </span></span><br><span class="line">    &#125;<span class="keyword">while</span>(조건)</span><br></pre></td></tr></table></figure>
+<h3 id="continue-amp-break"><a href="#continue-amp-break" class="headerlink" title="continue &amp; break"></a>continue &amp; break</h3><p>continue와 break 비교</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ex)<span class="keyword">break</span>                           ex)<span class="keyword">continue</span></span><br><span class="line">      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)                      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)</span><br><span class="line">      &#123;                                 &#123;</span><br><span class="line">      <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">break</span>;                  <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">continue</span>;</span><br><span class="line">      <span class="comment">//while문을 탈출                   //조건검사로 이동</span></span><br><span class="line">      &#125;                                 &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="반복문의-중첩"><a href="#반복문의-중첩" class="headerlink" title="반복문의 중첩"></a>반복문의 중첩</h3><p>for문의 중첩</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">기본구조 ex)                                                                   </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> a=<span class="number">0</span>; a&lt;<span class="number">5</span>; a++) &#123;    설명 : a 가 <span class="number">0</span> 일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 돌고</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> b=<span class="number">0</span>; a&lt;<span class="number">5</span>; b++) &#123;         a 가 <span class="number">1</span>일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 반복하여</span><br><span class="line">                                       a 조건이 만족할때 까지 계속하여 반복한다.</span><br><span class="line">        &#125;                                                                              </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while문의-중첩"><a href="#while문의-중첩" class="headerlink" title="while문의 중첩"></a>while문의 중첩</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조  ex)</span><br><span class="line"><span class="keyword">while</span>(a&lt;<span class="number">10</span>)&#123;</span><br><span class="line">  b=<span class="number">1</span>;                                                           </span><br><span class="line">    <span class="keyword">while</span>(b&lt;<span class="number">10</span>) &#123;</span><br><span class="line">          b++;</span><br><span class="line">    &#125;</span><br><span class="line">  a++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-조건문-3항연산자/" >
+  Java 조건문/3항연산자
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-조건문-3항연산자/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>조건문은 if문 과 switch 두가지이다.<br>기본적으로 true와 false의 값을 가진다.</p>
+<h4 id="if-문"><a href="#if-문" class="headerlink" title="if 문"></a>if 문</h4><p>If 그리고 else  (if는 따로 존재할수있으나 else는 따로 존재할수없다.)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">if</span>(<span class="keyword">true</span> or <span class="keyword">false</span>)            <span class="keyword">if</span>(<span class="keyword">true</span> or <span class="keyword">false</span>)</span><br><span class="line">     &#123;                           &#123;</span><br><span class="line">     <span class="comment">/* true시 실행되는 영역 */</span>    <span class="comment">/*true시 실행되는 영역 */</span></span><br><span class="line">     &#125;                           &#125;</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">     &#123;</span><br><span class="line">           <span class="comment">/*false시 실행되는 영역*/</span></span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>if~else 중첩의 일반화</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">        System.out.println(<span class="string">"..."</span>); <span class="comment">// if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">        System.out.println(<span class="string">"..."</span>);   <span class="comment">// else if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>); <span class="comment">// else if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>);</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>);</span><br><span class="line">    &#125;  <span class="comment">// if 조건이 안맞고 else if 의 조건도 안맞을때 실행되는 부분</span></span><br><span class="line">~~~        </span><br><span class="line"></span><br><span class="line">#### 삼항 연산자</span><br><span class="line">~~~JAVA                         </span><br><span class="line">x = (   조건   )  ? 값<span class="number">1</span> : 값<span class="number">2</span>    <span class="comment">//조건이 참일시 값1 x에 대입된다.</span></span><br><span class="line">                                <span class="comment">//조건이 거짓일시 값2 x에 대입된다.</span></span><br><span class="line">ex)</span><br><span class="line"><span class="keyword">int</span> x = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">char</span> c;</span><br><span class="line">c = ( x &lt; <span class="number">10</span> ) ? <span class="string">'Y'</span> : <span class="string">'N'</span> ;    <span class="comment">//결과가 참이므로 c에 'Y'가 대입된다.</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="switch-문"><a href="#switch-문" class="headerlink" title="switch 문"></a>switch 문</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"> <span class="keyword">switch</span>(n)&#123; <span class="comment">//여기에 n은 정수만 올수있다.</span></span><br><span class="line">     <span class="keyword">case</span> <span class="number">1</span>;(n이 <span class="number">1</span>이면 여기서부터 시작)<span class="comment">//키워드 case,default를 가리켜 레이블이라한다.</span></span><br><span class="line">           .....                                                  </span><br><span class="line">    <span class="comment">//레이블이랑 위치를 알려주는 역활</span></span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>;(n이 <span class="number">2</span>이면 여기서부터 시작)</span><br><span class="line">           .....</span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>;(n이 <span class="number">3</span>이면 여기서부터 시작)</span><br><span class="line">           .....</span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">default</span>;(n이 이도저도 아니면 여기서부터)</span><br><span class="line">          .....</span><br><span class="line">          .....</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트/" >
+  Java 연산자(대입/복합대입/관계/논리/비트/비트쉬프트)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h4 id="연산자-operator"><a href="#연산자-operator" class="headerlink" title="연산자 operator"></a>연산자 operator</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">+</th>
+<th style="text-align:center">-</th>
+<th style="text-align:center">*</th>
+<th style="text-align:center">/</th>
+<th style="text-align:center">%</th>
+<th style="text-align:center">++</th>
+<th style="text-align:center">–</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>증가연산    ex) n++;  ,   ++n;<br>감소연산    ex) n–;  ,     – n;</p>
+<blockquote>
+<p>대입의 우선순위<br>ex) int num1 = 5<br>    int num2 = num1 ++;     //이럴경우 증가연산보다 대입이 먼저 진행된다.</p>
+</blockquote>
+<h4 id="대입-연산자"><a href="#대입-연산자" class="headerlink" title="대입 연산자"></a>대입 연산자</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">기호</th>
+<th style="text-align:center">ex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">=</td>
+<td style="text-align:center">ex)val = 20;</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">ex)val = 4+3;</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">ex)val = 4-3;</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">ex)val = 4*3;</td>
+</tr>
+<tr>
+<td style="text-align:center">/</td>
+<td style="text-align:center">ex)val = 4/3;</td>
+</tr>
+<tr>
+<td style="text-align:center">%</td>
+<td style="text-align:center">ex)val = 4%3;</td>
+</tr>
+</tbody>
+</table>
+<p>% : 왼쪽의 피연산자 값을 오른쪽의 피연산자 값으로 나눴을 때 얻게 되는 나머지를 반환한다.</p>
+<h4 id="복합대입-연산자"><a href="#복합대입-연산자" class="headerlink" title="복합대입 연산자"></a>복합대입 연산자</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a += b      <span class="comment">// a = a+b</span></span><br><span class="line">a -= b      <span class="comment">// a = a-b</span></span><br><span class="line">a *= b      <span class="comment">// a = a*b</span></span><br><span class="line">a /= b      <span class="comment">// a = a/b</span></span><br><span class="line">a %= b      <span class="comment">// a = a%b</span></span><br></pre></td></tr></table></figure>
+<h4 id="관계-연산자"><a href="#관계-연산자" class="headerlink" title="관계 연산자"></a>관계 연산자</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">연산 결과가 <span class="keyword">true</span> 또는 <span class="keyword">false</span>   진행방향 =&gt;</span><br><span class="line">n1 &lt; n2        <span class="comment">// n1이 n2보다 작은가?   </span></span><br><span class="line">n1 &gt; n2  </span><br><span class="line">n1 &lt;= n2       <span class="comment">// n1이 n2보다 작거나 같은가?</span></span><br><span class="line">n1 &gt;= n2</span><br><span class="line">n1 == n2       <span class="comment">//  n1과 n2가 같은가?</span></span><br><span class="line">n1 != n2       <span class="comment">//  n1과 n2가 다른가?</span></span><br></pre></td></tr></table></figure>
+<h4 id="논리-연산자"><a href="#논리-연산자" class="headerlink" title="논리 연산자"></a>논리 연산자</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">연산 결과가 <span class="keyword">true</span> <span class="keyword">false</span></span><br><span class="line">&amp;&amp;    A &amp;&amp; B A와 B모두 <span class="keyword">true</span>이면 연산결과는 <span class="keyword">true</span> ( and )</span><br><span class="line">      두조건이 맞으면 <span class="keyword">true</span> 하나라도 아니면 <span class="keyword">false</span></span><br><span class="line">||    A || B A와 B 둘중하나라도 <span class="keyword">true</span>이면 연산결과는 <span class="keyword">true</span> ( OR )</span><br><span class="line">!     !A 연산결과는 A가 <span class="keyword">true</span>이면 <span class="keyword">false</span>, A가 <span class="keyword">false</span>이면 <span class="keyword">true</span> (반대)</span><br></pre></td></tr></table></figure>
+<h3 id="비트-연산자"><a href="#비트-연산자" class="headerlink" title="비트 연산자"></a>비트 연산자</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&amp;    비트단위로 AND 연산을 한다. ex) n1 &amp; n2;</span><br><span class="line">|    비트단위로 OR 연산을 한다. ex)n1 | n2;</span><br><span class="line">^    비트단위로 XOR 연산을 한다. ex) n1 ^ n2;</span><br><span class="line">~    피연산자의 모든 비트를 반전시켜서 얻은 결과를 반환 ex) ~n;</span><br></pre></td></tr></table></figure>
+<p>비트 연산 진리 표</p>
+<ul>
+<li>&amp;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">비트A</th>
+<th style="text-align:center">비트B</th>
+<th style="text-align:center">비트A&amp;비트B ( &amp; 둘다 1 이여야만 1 출력)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>|</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">비트A</th>
+<th style="text-align:center">비트B</th>
+<th style="text-align:center">비트A l 비트B ( l 둘중 하나라도 1이면 1 출력 )</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>^</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">비트A</th>
+<th style="text-align:center">비트B</th>
+<th style="text-align:center">비트A^비트B ( ^ 다른 경우에 1 출력 )</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>~</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">비트</th>
+<th style="text-align:center">~비트 ( ~ 반대로 출력)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="비트-쉬프트-연산자"><a href="#비트-쉬프트-연산자" class="headerlink" title="비트 쉬프트 연산자"></a>비트 쉬프트 연산자</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;     -피연산자의 비트열을 왼쪽으로 이동</span><br><span class="line">         -이동에 따른 빈공간은 <span class="number">0</span>으로 채움</span><br><span class="line">         -ex) n &lt;&lt; <span class="number">2</span>;</span><br><span class="line">            -&gt;n의 비트 열을 두 칸 왼쪽으로 이동 시킨 결과 반환</span><br><span class="line"></span><br><span class="line"> &gt;&gt;    -피연산자의 비트열을 오른쪽으로 이동</span><br><span class="line">         -이동에 따른 빈 공간은 음수의 경우 <span class="number">1</span>, 양수의 경우 <span class="number">0</span>으로 채움</span><br><span class="line">         -ex) n &gt;&gt; <span class="number">2</span>;</span><br><span class="line">          -&gt;n의 비트 열을 두 칸 오른쪽으로 이동 시킨 결과 반환</span><br><span class="line"></span><br><span class="line"> &gt;&gt;&gt;   -피연산자의 비트 열을 오른쪽으로 이동</span><br><span class="line">          -이동에 따른 빈 공간은 <span class="number">0</span>으로 채움</span><br><span class="line">          -ex) n &gt;&gt;&gt; <span class="number">2</span>;</span><br><span class="line">          -&gt;n의 비트 열을 두 칸 오른쪽으로 이동 시킨 결과 반환</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-자료형-주석-상수-변수/" >
+  Java 자료형/주석/상수/변수
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-자료형-주석-상수-변수/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h4 id="JAVA-자료형의-종류"><a href="#JAVA-자료형의-종류" class="headerlink" title="JAVA 자료형의 종류"></a>JAVA 자료형의 종류</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">분류</th>
+<th style="text-align:center">이름</th>
+<th style="text-align:center">단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">정수형</td>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">1byte</td>
+</tr>
+<tr>
+<td style="text-align:center">정수형</td>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2byte</td>
+</tr>
+<tr>
+<td style="text-align:center">정수형</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4byte</td>
+</tr>
+<tr>
+<td style="text-align:center">정수형</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8byte</td>
+</tr>
+<tr>
+<td style="text-align:center">실수형</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4byte</td>
+</tr>
+<tr>
+<td style="text-align:center">실수형</td>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8byte</td>
+</tr>
+<tr>
+<td style="text-align:center">문자형</td>
+<td style="text-align:center">char</td>
+<td style="text-align:center">2byte</td>
+</tr>
+<tr>
+<td style="text-align:center">논리형</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">1byte</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">char</span> c =<span class="string">'A'</span>  <span class="comment">//[ 'A' 문자를 c에 넣어라]</span></span><br><span class="line">ex) <span class="keyword">boolean</span> b = <span class="keyword">true</span> (or) <span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+<h4 id="주석"><a href="#주석" class="headerlink" title="주석"></a>주석</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 한줄 주석</span></span><br><span class="line"><span class="comment">/* 행단위 주석 */</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="상수"><a href="#상수" class="headerlink" title="상수"></a>상수</h4><p>변하지 않는 값, 특정한 값이나 의미가 있는 값</p>
+<hr>
+<h4 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h4><p>메모리 공간을 분류하는 단위<br>변할수 있는 수</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Perfect-Test/" >
+  Perfect Test
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Perfect-Test/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/">category1</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/category2/">category2</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/category2/category3/">category3</a></li></ul></li></ul></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h1 id="h1과-동일한-부분입니다"><a href="#h1과-동일한-부분입니다" class="headerlink" title="h1과 동일한 부분입니다"></a>h1과 동일한 부분입니다</h1><h2 id="h2와-동일한-부분입니다"><a href="#h2와-동일한-부분입니다" class="headerlink" title="h2와 동일한 부분입니다"></a>h2와 동일한 부분입니다</h2><h3 id="h3와-동일한-부분입니다"><a href="#h3와-동일한-부분입니다" class="headerlink" title="h3와 동일한 부분입니다"></a>h3와 동일한 부분입니다</h3><h4 id="h2와-동일한-부분입니다-1"><a href="#h2와-동일한-부분입니다-1" class="headerlink" title="h2와 동일한 부분입니다"></a>h2와 동일한 부분입니다</h4><h5 id="h1와-동일한-부분입니다-최대"><a href="#h1와-동일한-부분입니다-최대" class="headerlink" title="h1와 동일한 부분입니다 [최대]"></a>h1와 동일한 부분입니다 [최대]</h5><p>숫자가 있는 리스트</p>
+<ol>
+<li>하나</li>
+<li>둘</li>
+<li>셋</li>
+<li>넷<br>숫자가 없는 리스트</li>
+</ol>
+<ul>
+<li>하나</li>
+<li>둘</li>
+<li>셋</li>
+</ul>
+<ul>
+<li>하나</li>
+<li>둘</li>
+<li>셋</li>
+</ul>
+<ul>
+<li>하나</li>
+<li>둘</li>
+<li>셋</li>
+</ul>
+<h1 id="제목부분입니다"><a href="#제목부분입니다" class="headerlink" title="제목부분입니다"></a>제목부분입니다</h1><h2 id="부제목부분입니다"><a href="#부제목부분입니다" class="headerlink" title="부제목부분입니다"></a>부제목부분입니다</h2><p>차이를 알겠습니까??<br><strong>글씨 두껍게</strong><br><em>글씨 기울기</em><br><em>글씨 기울기</em></p>
+<p>인용문 부분입니다.</p>
+<blockquote>
+<p>인용문 부분입니다.</p>
+</blockquote>
+<p>링크부분입니다.<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x67;&#111;&#x67;&#117;&#x64;&#x74;&#x6a;&#x71;&#49;&#50;&#51;&#64;&#100;&#97;&#x75;&#109;&#46;&#x6e;&#101;&#x74;">&#x67;&#111;&#x67;&#117;&#x64;&#x74;&#x6a;&#x71;&#49;&#50;&#51;&#64;&#100;&#97;&#x75;&#109;&#46;&#x6e;&#101;&#x74;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
+<p>이미지 링크 구글 로고입니다:<br><a href="http://www.google.co.kr/images/srpr/logo11w.png" target="_blank" rel="noopener">구글로고</a></p>
+<p>문장 사이에 줄 넣기</p>
+<hr>
+<p>테스트 중입니다</p>
+<p><del>줄가운데 줄긋기</del></p>
+<p>[^1]: 이건 먼소리입니까?<br>[^2]: 먼소리야 !!!!</p>
+<table>
+<thead>
+<tr>
+<th>과일</th>
+<th>채소</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사과</td>
+<td>피망</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>종목</th>
+<th>이름</th>
+<th>성별</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수영</td>
+<td>김형섭</td>
+<td>남자</td>
+</tr>
+<tr>
+<td>달리기</td>
+<td>김형섭</td>
+<td>여자</td>
+</tr>
+</tbody>
+</table>
+<p>주석부분입니다 [^2]</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">자바 부분</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line">static public void String(args[])&#123;</span><br><span class="line">  System.out.println(<span class="string">"hello KHSblog"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello KHSblog<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="헷"><a href="#헷" class="headerlink" title="#####헷"></a>#####헷</h2>
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
         <a href="/2018/01/26/post-clean-blog/" >
   Clean-blog 테마를 적용하다.
 </a>
@@ -192,89 +981,10 @@
     </div>
   
 
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/25/My-New-Post/" >
-  My New Post
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/25/My-New-Post/"><span class="article-date">
-  2018-01-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/25/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/25/hello-world/"><span class="article-date">
-  2018-01-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
 
 
   <div class="pagination">
-    <a class="extend prev" rel="prev" href="/">Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next</a>
   </div>
 
 
