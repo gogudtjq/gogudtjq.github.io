@@ -8,20 +8,22 @@
 
 <title>
   
-    Archive: 2018/1
+    Java 연산자(대입/복합대입/관계/논리/비트/비트쉬프트)
   
 </title>
 
-<meta name="description" content="일단 연습하고 있습니다!!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/archives/2018/01/index.html">
+<meta name="description" content="연산자 operator   + - * / % ++ –         증가연산    ex) n++;  ,   ++n;감소연산    ex) n–;  ,     – n;  대입의 우선순위ex) int num1 = 5    int num2 = num1 ++;     //이럴경우 증가연산보다 대입이 먼저 진행된다.  대입 연산자   기호 ex     = ex)val">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 연산자(대입&#x2F;복합대입&#x2F;관계&#x2F;논리&#x2F;비트&#x2F;비트쉬프트)">
+<meta property="og:url" content="http://gogudtjq.github.io/2018/01/26/Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="일단 연습하고 있습니다!!">
+<meta property="og:description" content="연산자 operator   + - * / % ++ –         증가연산    ex) n++;  ,   ++n;감소연산    ex) n–;  ,     – n;  대입의 우선순위ex) int num1 = 5    int num2 = num1 ++;     //이럴경우 증가연산보다 대입이 먼저 진행된다.  대입 연산자   기호 ex     = ex)val">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-26T08:40:38.811Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KHS blog">
-<meta name="twitter:description" content="일단 연습하고 있습니다!!">
+<meta name="twitter:title" content="Java 연산자(대입&#x2F;복합대입&#x2F;관계&#x2F;논리&#x2F;비트&#x2F;비트쉬프트)">
+<meta name="twitter:description" content="연산자 operator   + - * / % ++ –         증가연산    ex) n++;  ,   ++n;감소연산    ex) n–;  ,     – n;  대입의 우선순위ex) int num1 = 5    int num2 = num1 ++;     //이럴경우 증가연산보다 대입이 먼저 진행된다.  대입 연산자   기호 ex     = ex)val">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -151,51 +153,34 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트" class="article article-type-post">
+  
+    <h1 class="article-header">
+      Java 연산자(대입/복합대입/관계/논리/비트/비트쉬프트)
+    </h1>
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
-        </div>
-        <div class="post-list">
-    
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/26/Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트/" >
-  Java 연산자(대입/복합대입/관계/논리/비트/비트쉬프트)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/26/Java-연산자-대입-복합대입-관계-논리-비트-비트쉬프트/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2018-01-26
 </span>
-</a>
-        
+
+    
 	<span class="article-category tagcloud">
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
 	</span>
 
 
-        
+    
 	<span class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
 	</span>
 
 
-      </div>
-      <div class="article-entry">
-        
-          <h4 id="연산자-operator"><a href="#연산자-operator" class="headerlink" title="연산자 operator"></a>연산자 operator</h4><table>
+  </div>
+  <div class="article-entry">
+    <h4 id="연산자-operator"><a href="#연산자-operator" class="headerlink" title="연산자 operator"></a>연산자 operator</h4><table>
 <thead>
 <tr>
 <th style="text-align:center">+</th>
@@ -382,335 +367,29 @@
 </table>
 <h4 id="비트-쉬프트-연산자"><a href="#비트-쉬프트-연산자" class="headerlink" title="비트 쉬프트 연산자"></a>비트 쉬프트 연산자</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;     -피연산자의 비트열을 왼쪽으로 이동</span><br><span class="line">         -이동에 따른 빈공간은 <span class="number">0</span>으로 채움</span><br><span class="line">         -ex) n &lt;&lt; <span class="number">2</span>;</span><br><span class="line">            -&gt;n의 비트 열을 두 칸 왼쪽으로 이동 시킨 결과 반환</span><br><span class="line"></span><br><span class="line"> &gt;&gt;    -피연산자의 비트열을 오른쪽으로 이동</span><br><span class="line">         -이동에 따른 빈 공간은 음수의 경우 <span class="number">1</span>, 양수의 경우 <span class="number">0</span>으로 채움</span><br><span class="line">         -ex) n &gt;&gt; <span class="number">2</span>;</span><br><span class="line">          -&gt;n의 비트 열을 두 칸 오른쪽으로 이동 시킨 결과 반환</span><br><span class="line"></span><br><span class="line"> &gt;&gt;&gt;   -피연산자의 비트 열을 오른쪽으로 이동</span><br><span class="line">          -이동에 따른 빈 공간은 <span class="number">0</span>으로 채움</span><br><span class="line">          -ex) n &gt;&gt;&gt; <span class="number">2</span>;</span><br><span class="line">          -&gt;n의 비트 열을 두 칸 오른쪽으로 이동 시킨 결과 반환</span><br></pre></td></tr></table></figure>
 
-        
-      </div>
-    </div>
-
-  
-
-  
-  
+  </div>
+  <footer class="article-footer">
     
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/26/Java-자료형-주석-상수-변수/" >
-  Java 자료형/주석/상수/변수
-</a>
-
-      </h3>
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.e" target="_blank" title="Attribution-ShareAlike">
+      <img src="/images/cc/cc.png">
       
-
-      <div class="article-info">
-        <a href="/2018/01/26/Java-자료형-주석-상수-변수/"><span class="article-date">
-  2018-01-26
-</span>
-</a>
+          <img src="/images/cc/by.png">
         
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
-	</span>
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+      </span>
+    </a>
+  </div>
 
 
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <h4 id="JAVA-자료형의-종류"><a href="#JAVA-자료형의-종류" class="headerlink" title="JAVA 자료형의 종류"></a>JAVA 자료형의 종류</h4><table>
-<thead>
-<tr>
-<th style="text-align:center">분류</th>
-<th style="text-align:center">이름</th>
-<th style="text-align:center">단위</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">정수형</td>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">1byte</td>
-</tr>
-<tr>
-<td style="text-align:center">정수형</td>
-<td style="text-align:center">short</td>
-<td style="text-align:center">2byte</td>
-</tr>
-<tr>
-<td style="text-align:center">정수형</td>
-<td style="text-align:center">int</td>
-<td style="text-align:center">4byte</td>
-</tr>
-<tr>
-<td style="text-align:center">정수형</td>
-<td style="text-align:center">long</td>
-<td style="text-align:center">8byte</td>
-</tr>
-<tr>
-<td style="text-align:center">실수형</td>
-<td style="text-align:center">float</td>
-<td style="text-align:center">4byte</td>
-</tr>
-<tr>
-<td style="text-align:center">실수형</td>
-<td style="text-align:center">double</td>
-<td style="text-align:center">8byte</td>
-</tr>
-<tr>
-<td style="text-align:center">문자형</td>
-<td style="text-align:center">char</td>
-<td style="text-align:center">2byte</td>
-</tr>
-<tr>
-<td style="text-align:center">논리형</td>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">1byte</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">char</span> c =<span class="string">'A'</span>  <span class="comment">//[ 'A' 문자를 c에 넣어라]</span></span><br><span class="line">ex) <span class="keyword">boolean</span> b = <span class="keyword">true</span> (or) <span class="keyword">false</span></span><br></pre></td></tr></table></figure>
-<h4 id="주석"><a href="#주석" class="headerlink" title="주석"></a>주석</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 한줄 주석</span></span><br><span class="line"><span class="comment">/* 행단위 주석 */</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h4 id="상수"><a href="#상수" class="headerlink" title="상수"></a>상수</h4><p>변하지 않는 값, 특정한 값이나 의미가 있는 값</p>
-<hr>
-<h4 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h4><p>메모리 공간을 분류하는 단위<br>변할수 있는 수</p>
-
-        
-      </div>
-    </div>
-
-  
-
-  
-  
     
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/26/Perfect-Test/" >
-  Perfect Test
-</a>
+  </footer>
+</article>
 
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/26/Perfect-Test/"><span class="article-date">
-  2018-01-26
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/">category1</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/category2/">category2</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/category1/category2/category3/">category3</a></li></ul></li></ul></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="h1과-동일한-부분입니다"><a href="#h1과-동일한-부분입니다" class="headerlink" title="h1과 동일한 부분입니다"></a>h1과 동일한 부분입니다</h1><h2 id="h2와-동일한-부분입니다"><a href="#h2와-동일한-부분입니다" class="headerlink" title="h2와 동일한 부분입니다"></a>h2와 동일한 부분입니다</h2><h3 id="h3와-동일한-부분입니다"><a href="#h3와-동일한-부분입니다" class="headerlink" title="h3와 동일한 부분입니다"></a>h3와 동일한 부분입니다</h3><h4 id="h2와-동일한-부분입니다-1"><a href="#h2와-동일한-부분입니다-1" class="headerlink" title="h2와 동일한 부분입니다"></a>h2와 동일한 부분입니다</h4><h5 id="h1와-동일한-부분입니다-최대"><a href="#h1와-동일한-부분입니다-최대" class="headerlink" title="h1와 동일한 부분입니다 [최대]"></a>h1와 동일한 부분입니다 [최대]</h5><p>숫자가 있는 리스트</p>
-<ol>
-<li>하나</li>
-<li>둘</li>
-<li>셋</li>
-<li>넷<br>숫자가 없는 리스트</li>
-</ol>
-<ul>
-<li>하나</li>
-<li>둘</li>
-<li>셋</li>
-</ul>
-<ul>
-<li>하나</li>
-<li>둘</li>
-<li>셋</li>
-</ul>
-<ul>
-<li>하나</li>
-<li>둘</li>
-<li>셋</li>
-</ul>
-<h1 id="제목부분입니다"><a href="#제목부분입니다" class="headerlink" title="제목부분입니다"></a>제목부분입니다</h1><h2 id="부제목부분입니다"><a href="#부제목부분입니다" class="headerlink" title="부제목부분입니다"></a>부제목부분입니다</h2><p>차이를 알겠습니까??<br><strong>글씨 두껍게</strong><br><em>글씨 기울기</em><br><em>글씨 기울기</em></p>
-<p>인용문 부분입니다.</p>
-<blockquote>
-<p>인용문 부분입니다.</p>
-</blockquote>
-<p>링크부분입니다.<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#103;&#x6f;&#x67;&#117;&#100;&#x74;&#106;&#x71;&#x31;&#50;&#51;&#64;&#x64;&#97;&#117;&#x6d;&#x2e;&#x6e;&#101;&#x74;">&#103;&#x6f;&#x67;&#117;&#100;&#x74;&#106;&#x71;&#x31;&#50;&#51;&#64;&#x64;&#97;&#117;&#x6d;&#x2e;&#x6e;&#101;&#x74;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
-<p>이미지 링크 구글 로고입니다:<br><a href="http://www.google.co.kr/images/srpr/logo11w.png" target="_blank" rel="noopener">구글로고</a></p>
-<p>문장 사이에 줄 넣기</p>
-<hr>
-<p>테스트 중입니다</p>
-<p><del>줄가운데 줄긋기</del></p>
-<p>[^1]: 이건 먼소리입니까?<br>[^2]: 먼소리야 !!!!</p>
-<table>
-<thead>
-<tr>
-<th>과일</th>
-<th>채소</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>사과</td>
-<td>피망</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>종목</th>
-<th>이름</th>
-<th>성별</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>수영</td>
-<td>김형섭</td>
-<td>남자</td>
-</tr>
-<tr>
-<td>달리기</td>
-<td>김형섭</td>
-<td>여자</td>
-</tr>
-</tbody>
-</table>
-<p>주석부분입니다 [^2]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">자바 부분</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line">static public void String(args[])&#123;</span><br><span class="line">  System.out.println(<span class="string">"hello KHSblog"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello KHSblog<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="헷"><a href="#헷" class="headerlink" title="#####헷"></a>#####헷</h2>
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/26/post-clean-blog/" >
-  Clean-blog 테마를 적용하다.
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/26/post-clean-blog/"><span class="article-date">
-  2018-01-26
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clean-blog/">clean-blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/theme/">theme</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/25/My-New-Post/" >
-  My New Post
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/25/My-New-Post/"><span class="article-date">
-  2018-01-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/25/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/25/hello-world/"><span class="article-date">
-  2018-01-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-      </div>
-    </div>
-
-  
 
 
 
