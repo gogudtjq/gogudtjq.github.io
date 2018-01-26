@@ -85,21 +85,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">Category</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">6</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">7</span></li></ul>
               </li>
             
           
@@ -153,6 +153,53 @@
       
           <h1>Java Note</h1>
 
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-조건문-3항연산자/" >
+  Java 조건문/3항연산자
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-조건문-3항연산자/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>조건문은 if문 과 switch 두가지이다.<br>기본적으로 true와 false의 값을 가진다.</p>
+<h4 id="if-문"><a href="#if-문" class="headerlink" title="if 문"></a>if 문</h4><p>If 그리고 else  (if는 따로 존재할수있으나 else는 따로 존재할수없다.)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">if</span>(<span class="keyword">true</span> or <span class="keyword">false</span>)            <span class="keyword">if</span>(<span class="keyword">true</span> or <span class="keyword">false</span>)</span><br><span class="line">     &#123;                           &#123;</span><br><span class="line">     <span class="comment">/* true시 실행되는 영역 */</span>    <span class="comment">/*true시 실행되는 영역 */</span></span><br><span class="line">     &#125;                           &#125;</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">     &#123;</span><br><span class="line">           <span class="comment">/*false시 실행되는 영역*/</span></span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>if~else 중첩의 일반화</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">        System.out.println(<span class="string">"..."</span>); <span class="comment">// if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">        System.out.println(<span class="string">"..."</span>);   <span class="comment">// else if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>); <span class="comment">// else if  조건이 참일시 실행되는 부분</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(조건문)&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>);</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">          System.out.println(<span class="string">"..."</span>);</span><br><span class="line">    &#125;  <span class="comment">// if 조건이 안맞고 else if 의 조건도 안맞을때 실행되는 부분</span></span><br><span class="line">~~~        </span><br><span class="line"></span><br><span class="line">#### 삼항 연산자</span><br><span class="line">~~~JAVA                         </span><br><span class="line">x = (   조건   )  ? 값<span class="number">1</span> : 값<span class="number">2</span>    <span class="comment">//조건이 참일시 값1 x에 대입된다.</span></span><br><span class="line">                                <span class="comment">//조건이 거짓일시 값2 x에 대입된다.</span></span><br><span class="line">ex)</span><br><span class="line"><span class="keyword">int</span> x = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">char</span> c;</span><br><span class="line">c = ( x &lt; <span class="number">10</span> ) ? <span class="string">'Y'</span> : <span class="string">'N'</span> ;    <span class="comment">//결과가 참이므로 c에 'Y'가 대입된다.</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="switch-문"><a href="#switch-문" class="headerlink" title="switch 문"></a>switch 문</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"> <span class="keyword">switch</span>(n)&#123; <span class="comment">//여기에 n은 정수만 올수있다.</span></span><br><span class="line">     <span class="keyword">case</span> <span class="number">1</span>;(n이 <span class="number">1</span>이면 여기서부터 시작)<span class="comment">//키워드 case,default를 가리켜 레이블이라한다.</span></span><br><span class="line">           .....                                                  </span><br><span class="line">    <span class="comment">//레이블이랑 위치를 알려주는 역활</span></span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>;(n이 <span class="number">2</span>이면 여기서부터 시작)</span><br><span class="line">           .....</span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>;(n이 <span class="number">3</span>이면 여기서부터 시작)</span><br><span class="line">           .....</span><br><span class="line">           .....</span><br><span class="line">    <span class="keyword">default</span>;(n이 이도저도 아니면 여기서부터)</span><br><span class="line">          .....</span><br><span class="line">          .....</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   
