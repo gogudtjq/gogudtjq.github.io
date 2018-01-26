@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>
+  
+    Java 반복문(for문/while문/do while문)/continue&amp;break
+  
+</title>
+
+<meta name="description" content="반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.반복문 종류는 for,while, do~while for문12345기본구조ex) for ( 초기화; 조건; 연산식 )&amp;#123;     for (int  i = 0  ; i &amp;lt; 10 ;  i++ )&amp;#123;        //조건이 참일시 실행되는 부분   →  // i가 0 부터 i &amp;lt;">
+<meta name="keywords" content="JAVA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 반복문(for문&#x2F;while문&#x2F;do while문)&#x2F;continue&amp;break">
+<meta property="og:url" content="http://gogudtjq.github.io/2018/01/26/Java-반복문-for문-while문-do-while문-continue-break/index.html">
+<meta property="og:site_name" content="KHS blog">
+<meta property="og:description" content="반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.반복문 종류는 for,while, do~while for문12345기본구조ex) for ( 초기화; 조건; 연산식 )&amp;#123;     for (int  i = 0  ; i &amp;lt; 10 ;  i++ )&amp;#123;        //조건이 참일시 실행되는 부분   →  // i가 0 부터 i &amp;lt;">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-26T09:17:24.951Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java 반복문(for문&#x2F;while문&#x2F;do while문)&#x2F;continue&amp;break">
+<meta name="twitter:description" content="반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.반복문 종류는 for,while, do~while for문12345기본구조ex) for ( 초기화; 조건; 연산식 )&amp;#123;     for (int  i = 0  ; i &amp;lt; 10 ;  i++ )&amp;#123;        //조건이 참일시 실행되는 부분   →  // i가 0 부터 i &amp;lt;">
+
+
+  <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
+
+
+
+  <link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+
+
+
+</head>
+<body
+  
+    class="monochrome"
+  
+  >
+  <div class="mobile-header">
+  <button class="sidebar-toggle" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="title" href="/">KHS blog</a>
+</div>
+
+  <div class="main-container">
+    <div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="/">KHS blog</a></h1>
+    
+    <div class="info">
+      <div class="content">
+        
+          <div class="description">일단 연습하고 있습니다!!</div>
+        
+        
+          <div class="author">Kim Hyoung Seob</div>
+        
+      </div>
+      
+        <div class="avatar">
+          
+            <a href="/about"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/sh0.08/e35/21224089_467981386900958_8435251409259069440_n.jpg"></a>
+          
+        </div>
+      
+    </div>
+  </div>
+  <div class="body">
+    
+      
+        <ul class="nav">
+          
+            
+              <li class="category-list-container">
+                <a href="javascript:;">Category</a>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="tag-list-container">
+                <a href="javascript:;">Tag</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="archive-list-container">
+                <a href="javascript:;">Archive</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">8</span></li></ul>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="/" title="Homepage">Homepage</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/archives" title="By Year">By Year</a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="https://github.com/denjones/hexo-theme-chan" title="Chan" target="_blank" rel="noopener">Chan</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="https://github.com/denjones" title="Github" target="_blank" rel="noopener">Github</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/atom.xml" title="RSS">RSS</a>
+              </li>
+            
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    <div class="main-content">
+      
+        <div style="max-width: 1000px">
+      
+          <article id="post-Java-반복문-for문-while문-do-while문-continue-break" class="article article-type-post">
+  
+    <h1 class="article-header">
+      Java 반복문(for문/while문/do while문)/continue&break
+    </h1>
+  
+  
+
+  <div class="article-info">
+    <span class="article-date">
+  2018-01-26
+</span>
+
+    
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+    
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+  </div>
+  <div class="article-entry">
+    <p>반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.<br>반복문 종류는 for,while, do~while</p>
+<h3 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex) <span class="keyword">for</span> ( 초기화; 조건; 연산식 )&#123;     <span class="keyword">for</span> (<span class="keyword">int</span>  i = <span class="number">0</span>  ; i &lt; <span class="number">10</span> ;  i++ )&#123;    </span><br><span class="line">    <span class="comment">//조건이 참일시 실행되는 부분   →  // i가 0 부터 i &lt; 10 일때 까지</span></span><br><span class="line">                                     <span class="comment">//i++(하나씩 증가하며) 반복으로 실행</span></span><br><span class="line">   &#125;                                &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while-문"><a href="#while-문" class="headerlink" title="while 문"></a>while 문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">     초기화                             <span class="keyword">int</span> w = <span class="number">0</span> ;</span><br><span class="line">     <span class="keyword">while</span>(조건)&#123;                       <span class="keyword">while</span> ( w &lt; <span class="number">10</span> ) &#123;</span><br><span class="line">     <span class="comment">//조건이 참일시 실행되는 부분  →     //w가 0 부터 w &lt; 10 일때 까지</span></span><br><span class="line">                                        <span class="comment">//w++(하나씩 증가하며) 반복</span></span><br><span class="line">     연산식                              w++;</span><br><span class="line">     &#125;                                  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="do-while-문"><a href="#do-while-문" class="headerlink" title="do while 문"></a>do while 문</h3><p>while같은경우엔 검사 실행 검사 실행의 과정이라면<br>do while 같은경우는 실행후 검사 실행후 검사,최소 한번은 실행이 된다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">    <span class="keyword">do</span> &#123;                                                        </span><br><span class="line">     <span class="comment">//실행                                                 </span></span><br><span class="line">    &#125;<span class="keyword">while</span>(조건)</span><br></pre></td></tr></table></figure>
+<h3 id="continue-amp-break"><a href="#continue-amp-break" class="headerlink" title="continue &amp; break"></a>continue &amp; break</h3><p>continue와 break 비교</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ex)<span class="keyword">break</span>                           ex)<span class="keyword">continue</span></span><br><span class="line">      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)                      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)</span><br><span class="line">      &#123;                                 &#123;</span><br><span class="line">      <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">break</span>;                  <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">continue</span>;</span><br><span class="line">      <span class="comment">//while문을 탈출                   //조건검사로 이동</span></span><br><span class="line">      &#125;                                 &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="반복문의-중첩"><a href="#반복문의-중첩" class="headerlink" title="반복문의 중첩"></a>반복문의 중첩</h3><p>for문의 중첩</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">기본구조 ex)                                                                   </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> a=<span class="number">0</span>; a&lt;<span class="number">5</span>; a++) &#123;    설명 : a 가 <span class="number">0</span> 일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 돌고</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> b=<span class="number">0</span>; a&lt;<span class="number">5</span>; b++) &#123;         a 가 <span class="number">1</span>일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 반복하여</span><br><span class="line">                                       a 조건이 만족할때 까지 계속하여 반복한다.</span><br><span class="line">        &#125;                                                                              </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while문의-중첩"><a href="#while문의-중첩" class="headerlink" title="while문의 중첩"></a>while문의 중첩</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조  ex)</span><br><span class="line"><span class="keyword">while</span>(a&lt;<span class="number">10</span>)&#123;</span><br><span class="line">  b=<span class="number">1</span>;                                                           </span><br><span class="line">    <span class="keyword">while</span>(b&lt;<span class="number">10</span>) &#123;</span><br><span class="line">          b++;</span><br><span class="line">    &#125;</span><br><span class="line">  a++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.e" target="_blank" title="Attribution-ShareAlike">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
+        
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+      </span>
+    </a>
+  </div>
+
+
+    
+
+  </footer>
+</article>
+
+
+
+
+
+
+
+          <div class="main-footer">
+  
+    © 2018 KHS blog - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+  
+</div>
+
+      
+        </div>
+      
+    </div>
+  </div>
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
+  <link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/PhotoSwipe/photoswipe.js"></script>
+  <script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
+
+
+<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+<script src="/scripts/main.js"></script>
+
+</body>
+</html>

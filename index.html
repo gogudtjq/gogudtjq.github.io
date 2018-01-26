@@ -85,21 +85,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">Category</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">7</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">8</span></li></ul>
               </li>
             
           
@@ -152,6 +152,59 @@
         <div style="max-width: 1000px">
       
           
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-반복문-for문-while문-do-while문-continue-break/" >
+  Java 반복문(for문/while문/do while문)/continue&amp;break
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-반복문-for문-while문-do-while문-continue-break/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>반복문은 조건이 만족할때 까지 반복적으로 작업을 수행한다.<br>반복문 종류는 for,while, do~while</p>
+<h3 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex) <span class="keyword">for</span> ( 초기화; 조건; 연산식 )&#123;     <span class="keyword">for</span> (<span class="keyword">int</span>  i = <span class="number">0</span>  ; i &lt; <span class="number">10</span> ;  i++ )&#123;    </span><br><span class="line">    <span class="comment">//조건이 참일시 실행되는 부분   →  // i가 0 부터 i &lt; 10 일때 까지</span></span><br><span class="line">                                     <span class="comment">//i++(하나씩 증가하며) 반복으로 실행</span></span><br><span class="line">   &#125;                                &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while-문"><a href="#while-문" class="headerlink" title="while 문"></a>while 문</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">     초기화                             <span class="keyword">int</span> w = <span class="number">0</span> ;</span><br><span class="line">     <span class="keyword">while</span>(조건)&#123;                       <span class="keyword">while</span> ( w &lt; <span class="number">10</span> ) &#123;</span><br><span class="line">     <span class="comment">//조건이 참일시 실행되는 부분  →     //w가 0 부터 w &lt; 10 일때 까지</span></span><br><span class="line">                                        <span class="comment">//w++(하나씩 증가하며) 반복</span></span><br><span class="line">     연산식                              w++;</span><br><span class="line">     &#125;                                  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="do-while-문"><a href="#do-while-문" class="headerlink" title="do while 문"></a>do while 문</h3><p>while같은경우엔 검사 실행 검사 실행의 과정이라면<br>do while 같은경우는 실행후 검사 실행후 검사,최소 한번은 실행이 된다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">    <span class="keyword">do</span> &#123;                                                        </span><br><span class="line">     <span class="comment">//실행                                                 </span></span><br><span class="line">    &#125;<span class="keyword">while</span>(조건)</span><br></pre></td></tr></table></figure>
+<h3 id="continue-amp-break"><a href="#continue-amp-break" class="headerlink" title="continue &amp; break"></a>continue &amp; break</h3><p>continue와 break 비교</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ex)<span class="keyword">break</span>                           ex)<span class="keyword">continue</span></span><br><span class="line">      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)                      <span class="keyword">while</span>(n&lt;<span class="number">100</span>)</span><br><span class="line">      &#123;                                 &#123;</span><br><span class="line">      <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">break</span>;                  <span class="keyword">if</span>(x==<span class="number">20</span>) <span class="keyword">continue</span>;</span><br><span class="line">      <span class="comment">//while문을 탈출                   //조건검사로 이동</span></span><br><span class="line">      &#125;                                 &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="반복문의-중첩"><a href="#반복문의-중첩" class="headerlink" title="반복문의 중첩"></a>반복문의 중첩</h3><p>for문의 중첩</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">기본구조 ex)                                                                   </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> a=<span class="number">0</span>; a&lt;<span class="number">5</span>; a++) &#123;    설명 : a 가 <span class="number">0</span> 일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 돌고</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> b=<span class="number">0</span>; a&lt;<span class="number">5</span>; b++) &#123;         a 가 <span class="number">1</span>일때  b 가 <span class="number">0</span> ~ <span class="number">9</span>번 까지 반복하여</span><br><span class="line">                                       a 조건이 만족할때 까지 계속하여 반복한다.</span><br><span class="line">        &#125;                                                                              </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="while문의-중첩"><a href="#while문의-중첩" class="headerlink" title="while문의 중첩"></a>while문의 중첩</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조  ex)</span><br><span class="line"><span class="keyword">while</span>(a&lt;<span class="number">10</span>)&#123;</span><br><span class="line">  b=<span class="number">1</span>;                                                           </span><br><span class="line">    <span class="keyword">while</span>(b&lt;<span class="number">10</span>) &#123;</span><br><span class="line">          b++;</span><br><span class="line">    &#125;</span><br><span class="line">  a++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   
@@ -590,7 +643,7 @@
 <blockquote>
 <p>인용문 부분입니다.</p>
 </blockquote>
-<p>링크부분입니다.<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#103;&#111;&#103;&#x75;&#100;&#116;&#x6a;&#x71;&#49;&#50;&#x33;&#64;&#x64;&#97;&#117;&#x6d;&#x2e;&#x6e;&#101;&#116;">&#103;&#111;&#103;&#x75;&#100;&#116;&#x6a;&#x71;&#49;&#50;&#x33;&#64;&#x64;&#97;&#117;&#x6d;&#x2e;&#x6e;&#101;&#116;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
+<p>링크부분입니다.<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#103;&#x6f;&#103;&#117;&#100;&#116;&#106;&#x71;&#49;&#50;&#x33;&#x40;&#100;&#97;&#x75;&#109;&#x2e;&#x6e;&#x65;&#x74;">&#103;&#x6f;&#103;&#117;&#100;&#116;&#106;&#x71;&#49;&#50;&#x33;&#x40;&#100;&#97;&#x75;&#109;&#x2e;&#x6e;&#x65;&#x74;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
 <p>이미지 링크 구글 로고입니다:<br><a href="http://www.google.co.kr/images/srpr/logo11w.png" target="_blank" rel="noopener">구글로고</a></p>
 <p>문장 사이에 줄 넣기</p>
 <hr>
