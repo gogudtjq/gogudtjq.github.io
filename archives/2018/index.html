@@ -85,21 +85,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">Category</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java-Note/">Java Note</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/category1/">category1</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clean-blog/">clean-blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/">theme</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">8</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">11</span></li></ul>
               </li>
             
           
@@ -163,6 +163,171 @@
           <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
         </div>
         <div class="post-list">
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-메모리-영역/" >
+  Java 메모리 영역
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-메모리-영역/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="Stack-영역"><a href="#Stack-영역" class="headerlink" title="Stack 영역"></a>Stack 영역</h3><ul>
+<li>레퍼런스 변수들이 저장되는 영역</li>
+</ul>
+<blockquote>
+<p>메소드 실행시 생성되고 메소드 작업이 종료되면 할당되었던 메모리 공간은 비워진다.</p>
+</blockquote>
+<h3 id="Heap-영역"><a href="#Heap-영역" class="headerlink" title="Heap 영역"></a>Heap 영역</h3><ul>
+<li>new : 주소를 던져 주는 연산자</li>
+<li>new로 생성한 것들이 존재하는 영역</li>
+<li>가비지 컬렉션이 주기적으로 정리</li>
+</ul>
+<blockquote>
+<p>new 연산자로 생성된 객체와 배열을 저장하는 공간으로 클래스 영역에 로드된 클래스만 생성 가능하다.<br>Garbage Collector를 통해 메모리를 반환하게 됩니다.</p>
+</blockquote>
+<h3 id="Static-영역"><a href="#Static-영역" class="headerlink" title="Static 영역"></a>Static 영역</h3><ul>
+<li>클래스 로드(메소드/멤버변수는 이름만)</li>
+<li>static 변수</li>
+<li>String 클래스</li>
+<li>문자열 상수</li>
+</ul>
+<blockquote>
+<p>Static 영역에 한번들어가면 프로그램이 종료 될 시점까지 저장되어있다.<br>지속적으로 사용하는 것들을 저장 시켜놓는다.<br>Static 영역은 계속 쌓이므로 사용하는데에 주의</p>
+</blockquote>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-String타입-equals-indexOf-lastindexOf-length-replace-split-toUpperCas-toLowerCas-toString-trim-valueOf-contains-charAt-concat/" >
+  Java String타입(equals/indexOf/lastindexOf/length/replace/split/toUpperCas/toLowerCas/toString/trim/valueOf/contains/charAt/concat)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-String타입-equals-indexOf-lastindexOf-length-replace-split-toUpperCas-toLowerCas-toString-trim-valueOf-contains-charAt-concat/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p>구조<br>ex) String 변수명 = “ 문자열 “ ;</p>
+<p>문자열이 직접 변수에 저장되는 것이 아니고,<br>문자열은 String 객체로 생성되고<br>변수는 String 객체를 참조합니다</p>
+<h4 id="String-타입-메소드"><a href="#String-타입-메소드" class="headerlink" title="String 타입 메소드"></a>String 타입 메소드</h4><p><strong>equals()</strong>  비교 함수 : 원본 문자열과 매개값을 비교하여 동일한지 비교후<br>true 또는 false를 리턴한다.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"한"</span>;</span><br><span class="line"><span class="keyword">if</span> ( str.equals(<span class="string">"한"</span>) )&#123;</span><br><span class="line"><span class="comment">// str = 한이면 실행된다.</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><strong>indexOf</strong>  문자열 내에서 주어진 문자열의 위치를 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)                  </span><br><span class="line">String str  = <span class="string">"abcabcabc"</span>;</span><br><span class="line"><span class="keyword">int</span> i = str.indexOf(<span class="string">"c"</span>);      →  str 문자열중에 c의 위치를 찾는다.</span><br><span class="line">System.out.println(i);           진행 방향  [→]</span><br></pre></td></tr></table></figure></p>
+<p><strong>lastIndexOf</strong> indexOf와 동일한 역활을 하나 뒤에서부터 위치를 찾는다.</p>
+<p><strong>length</strong> 총 문자의 수를 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abcabcabc"</span>;</span><br><span class="line"><span class="keyword">int</span> len  = str.length();</span><br><span class="line">System.out.println(len);   →  str의 글자수가 len의 들어간다.</span><br></pre></td></tr></table></figure></p>
+<p><strong>replace</strong> 수정<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"A*B*C*D"</span>;        </span><br><span class="line">String repStr = str.replace(<span class="string">"*"</span>,<span class="string">"-"</span>); <span class="comment">//replace("지울것","지운공간에 추가할것");</span></span><br><span class="line">System.out.println(repStr);</span><br></pre></td></tr></table></figure></p>
+<p><strong>split</strong> 주어진값을 기준으로 짤라서 배열에 저장한다<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"홍길동-24-2001/10/11-서울시 "</span>;</span><br><span class="line">String spl[] = str.split(<span class="string">"-"</span>); <span class="comment">// split("기준");</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>toUpperCase</strong> 알파벳 대문자를 변환한 문자열 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abCdE"</span>;</span><br><span class="line">String upstr = str.toUpperCase();</span><br></pre></td></tr></table></figure></p>
+<p><strong>toLowerCase</strong> 알파벳 소문자를 변환한 문자열 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"abCdE"</span>;</span><br><span class="line">String lostr = str.toLowerCase();</span><br></pre></td></tr></table></figure></p>
+<p><strong>toString</strong> 문자를 출력<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str  = <span class="string">"반갑습니다"</span> ;</span><br><span class="line">System.out.println(str11.toString());</span><br></pre></td></tr></table></figure></p>
+<p><strong>trim</strong> 앞 뒤 공백을 제거한 새로운 문자열을 리턴<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str = <span class="string">"반 갑  습  니  다"</span>;</span><br><span class="line">String trimStr =str.trim();</span><br></pre></td></tr></table></figure></p>
+<p><strong>valueOf</strong> 숫자 -&gt; 문자열로 바꿔준다<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> num    = <span class="number">123</span>;</span><br><span class="line">String iStr = String.valueOf(num);</span><br></pre></td></tr></table></figure></p>
+<p><strong>contains</strong> 탐색<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line">String str =<span class="string">"서울시 강남구"</span>;</span><br><span class="line">String findStr =<span class="string">"강남구"</span>;</span><br><span class="line"><span class="keyword">boolean</span> YN   = str.contains(findStr);</span><br></pre></td></tr></table></figure></p>
+<p><strong>charAt</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)   <span class="comment">//주소    0  1  2  3 4</span></span><br><span class="line">String str14 =<span class="string">"가나다라마"</span>;</span><br><span class="line"><span class="keyword">char</span> ch1 = str14.charAt(<span class="number">2</span>);   →  <span class="comment">//출력결과 : ch1에는 '다'가 저장된다.</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>concat</strong> 문자열 연결<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ex)                     </span><br><span class="line">str1 =<span class="string">"abc"</span>;</span><br><span class="line">str2 =<span class="string">"def"</span>;</span><br><span class="line">String conStr = str1.concat(str2);</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-Array배열-2차원-배열/" >
+  Java Array배열/2차원 배열
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-Array배열-2차원-배열/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Note/">Java Note</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h3><p>같은 자료형의 모음 , 정적인 개념<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span>[]</span><br><span class="line"><span class="keyword">int</span>[]                 <span class="comment">//index number로 관리된다</span></span><br><span class="line"><span class="keyword">double</span>[]</span><br><span class="line">String []</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">자료형  배열변수명[] = <span class="keyword">new</span> 자료형[배열 갯수]; → <span class="keyword">int</span> arrNum[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">  └&gt;자료형은 앞뒤 동일하게 써야된다.                                  </span><br><span class="line">자료형[]  배열변수명  ↘</span><br><span class="line">                     이렇게도 사용 가능하다.</span><br><span class="line">자료형  []배열변수명  ↗</span><br><span class="line"></span><br><span class="line">ex)    </span><br><span class="line">    <span class="keyword">int</span> arrNum[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];     </span><br><span class="line">                   ↓</span><br><span class="line">    arrNum[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line">    arrNum[<span class="number">1</span>] = <span class="number">20</span>;</span><br><span class="line">    arrNum[<span class="number">2</span>] = <span class="number">30</span>;                   </span><br><span class="line">    arrNum[<span class="number">3</span>] = <span class="number">40</span>;</span><br><span class="line">    arrNum[<span class="number">4</span>] = <span class="number">50</span>;   </span><br><span class="line"></span><br><span class="line"> 배열의 길이 표현방법 : 배열변수명.length    (arrNum.length)</span><br></pre></td></tr></table></figure>
+<h3 id="2차원-배열"><a href="#2차원-배열" class="headerlink" title="2차원 배열"></a>2차원 배열</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">기본구조</span><br><span class="line">ex)</span><br><span class="line">   자료형 배열변수명[열][행]; →  열 세로 행 가로</span><br><span class="line">  <span class="keyword">int</span> array[][] =&#123;                   </span><br><span class="line">                    &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;,   </span><br><span class="line">                    &#123;<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;,   →  자료형 배열변수명[][] =  <span class="keyword">new</span> 자료형[<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line">                    &#123;<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>&#125;</span><br><span class="line">                  &#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
     
   
 
@@ -643,7 +808,7 @@
 <blockquote>
 <p>인용문 부분입니다.</p>
 </blockquote>
-<p>링크부분입니다.<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#103;&#x6f;&#103;&#117;&#100;&#116;&#106;&#x71;&#49;&#50;&#x33;&#x40;&#100;&#97;&#x75;&#109;&#x2e;&#x6e;&#x65;&#x74;">&#103;&#x6f;&#103;&#117;&#100;&#116;&#106;&#x71;&#49;&#50;&#x33;&#x40;&#100;&#97;&#x75;&#109;&#x2e;&#x6e;&#x65;&#x74;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
+<p>링크부분입니다.<a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x67;&#111;&#x67;&#x75;&#x64;&#x74;&#106;&#x71;&#x31;&#x32;&#51;&#x40;&#100;&#x61;&#x75;&#109;&#46;&#x6e;&#x65;&#x74;">&#x67;&#111;&#x67;&#x75;&#x64;&#x74;&#106;&#x71;&#x31;&#x32;&#51;&#x40;&#100;&#x61;&#x75;&#109;&#46;&#x6e;&#x65;&#x74;</a><br>주소 대신 단어링크  <a href="https:www.daum.net" target="_blank" rel="noopener">형섭@mail</a></p>
 <p>이미지 링크 구글 로고입니다:<br><a href="http://www.google.co.kr/images/srpr/logo11w.png" target="_blank" rel="noopener">구글로고</a></p>
 <p>문장 사이에 줄 넣기</p>
 <hr>
@@ -766,49 +931,11 @@
 
   
 
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/25/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/25/hello-world/"><span class="article-date">
-  2018-01-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-      </div>
-    </div>
-
-  
 
 
+  <div class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/">Next</a>
+  </div>
 
 
 
