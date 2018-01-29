@@ -8,14 +8,14 @@
 
 <title>
   
-    Category: Oracle SQL
+    Tag: SQLDISTINCT
   
 </title>
 
 <meta name="description" content="일단 연습하고 있습니다!!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/categories/Oracle-SQL/index.html">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/SQLDISTINCT/index.html">
 <meta property="og:site_name" content="KHS blog">
 <meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
@@ -151,7 +151,7 @@
       
         <div style="max-width: 1000px">
       
-          <h1>Oracle SQL</h1>
+          <h1>SQLDISTINCT</h1>
 
 
   
@@ -196,52 +196,6 @@
 <p><strong>|| 연결연산자 : 열이나 문자열을 다른열에 연결</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> ename || <span class="string">' has $ '</span> || sal <span class="keyword">FROM</span> EMP;</span><br><span class="line"><span class="keyword">SELECT</span> ename || comm <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure></p>
 <p><strong>distinct : 중복행 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> DEPTNO <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
 <p><strong>테이블 구조 표시</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> emp;</span><br><span class="line">desc emp;</span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-셋팅/" >
-  Oracle SQL 셋팅
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-셋팅/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="../images/RunSQLCommand.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn</span><br><span class="line"></span><br><span class="line">Enter user-name: system</span><br><span class="line">Enter password:</span><br><span class="line">Connected.</span><br><span class="line">SQL&gt; alter user hr</span><br><span class="line">  2  identified by hr</span><br><span class="line">  3  account unlock;</span><br><span class="line"></span><br><span class="line">User altered.</span><br><span class="line"></span><br><span class="line">SQL&gt; disc</span><br><span class="line">Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bi</span><br><span class="line"> Production</span><br><span class="line">SQL&gt; conn hr/hr</span><br><span class="line">Connected.</span><br><span class="line">SQL&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="scott"><a href="#scott" class="headerlink" title="scott"></a>scott</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn system/system</span><br><span class="line">Connected.</span><br><span class="line"></span><br><span class="line">SQL&gt; @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql</span><br><span class="line"></span><br><span class="line">SQL&gt; alter user scott identified by tiger;</span><br><span class="line"></span><br><span class="line">User altered.</span><br><span class="line"></span><br><span class="line">SQL&gt;</span><br></pre></td></tr></table></figure>
 
         
       </div>
