@@ -13,14 +13,14 @@
 </title>
 
 <meta name="description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
-<meta name="keywords" content="Oracle,SQL,SQL DUAL,SQL DISTINCT">
+<meta name="keywords" content="Oracle,SQL,SQL Dual,SQL Distinct">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
 <meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/index.html">
 <meta property="og:site_name" content="KHS blog">
 <meta property="og:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T03:02:36.803Z">
+<meta property="og:updated_time" content="2018-01-29T03:08:44.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
 <meta name="twitter:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
@@ -94,7 +94,7 @@
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-AWT/">JAVA AWT</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-Calendar/">JAVA Calendar</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-File/">JAVA File</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-NumberMethod/">JAVA NumberMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/">Oracle</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL-DISTINCT/">SQL DISTINCT</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL-DUAL/">SQL DUAL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Server/">Server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sorting/">Sorting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swap/">Swap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/">JAVA</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-AWT/">JAVA AWT</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-Calendar/">JAVA Calendar</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-File/">JAVA File</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA-NumberMethod/">JAVA NumberMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/">Oracle</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL-Distinct/">SQL Distinct</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL-Dual/">SQL Dual</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Server/">Server</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sorting/">Sorting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swap/">Swap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
@@ -174,7 +174,7 @@
 
     
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-DISTINCT/">SQL DISTINCT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-DUAL/">SQL DUAL</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Distinct/">SQL Distinct</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Dual/">SQL Dual</a></li></ul>
 	</span>
 
 
