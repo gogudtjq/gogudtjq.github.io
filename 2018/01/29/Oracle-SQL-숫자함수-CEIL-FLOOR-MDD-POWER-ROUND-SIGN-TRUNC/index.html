@@ -8,20 +8,22 @@
 
 <title>
   
-    Tag: SQL Dual
+    Oracle SQL 숫자함수(CEIL/FLOOR/MDD/POWER/ROUND/SIGN/TRUNC)
   
 </title>
 
-<meta name="description" content="일단 연습하고 있습니다!!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-Dual/index.html">
+<meta name="description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;g">
+<meta name="keywords" content="Oracle,SQL,SQL 숫자함수">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle SQL 숫자함수(CEIL&#x2F;FLOOR&#x2F;MDD&#x2F;POWER&#x2F;ROUND&#x2F;SIGN&#x2F;TRUNC)">
+<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="일단 연습하고 있습니다!!">
+<meta property="og:description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;g">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-29T04:53:45.592Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KHS blog">
-<meta name="twitter:description" content="일단 연습하고 있습니다!!">
+<meta name="twitter:title" content="Oracle SQL 숫자함수(CEIL&#x2F;FLOOR&#x2F;MDD&#x2F;POWER&#x2F;ROUND&#x2F;SIGN&#x2F;TRUNC)">
+<meta name="twitter:description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;g">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -151,59 +153,64 @@
       
         <div style="max-width: 1000px">
       
-          <h1>SQL Dual</h1>
-
-
+          <article id="post-Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC" class="article article-type-post">
+  
+    <h1 class="article-header">
+      Oracle SQL 숫자함수(CEIL/FLOOR/MDD/POWER/ROUND/SIGN/TRUNC)
+    </h1>
   
   
-    <div class="post-list">
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/" >
-  Oracle SQL 테이블 명렁어(출력/가상테이블/중복행삭제/별명/연결연산자)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2018-01-29
 </span>
-</a>
-        
+
+    
 	<span class="article-category tagcloud">
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
 	</span>
 
 
-        
+    
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Distinct/">SQL Distinct</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Dual/">SQL Dual</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-숫자함수/">SQL 숫자함수</a></li></ul>
 	</span>
 
 
-      </div>
-      <div class="article-entry">
-        
-          <p><strong>테이블의 모든 데이터를 표현</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 이름을 기록한 테이블 명세</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tab;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 원하는 데이터만을 표현</strong><br>설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> EMPNO, ENAME, SAL <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>DUAL : 가상테이블</strong><br>존재하고 있는 테이블이 아닌 DUAL의 가상테이블을 만들어 작업하기에 유용하게 쓸수있다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">10</span>+<span class="number">2</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">'hello'</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">round</span>(<span class="number">10.6</span>) <span class="keyword">FROM</span> dual;</span><br></pre></td></tr></table></figure></p>
-<p><strong>alias : 별명 (대소문자 구분이 없음)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> sal*<span class="number">12</span> Money, sal money <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>|| 연결연산자 : 열이나 문자열을 다른열에 연결</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> ename || <span class="string">' has $ '</span> || sal <span class="keyword">FROM</span> EMP;</span><br><span class="line"><span class="keyword">SELECT</span> ename || comm <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure></p>
-<p><strong>distinct : 중복행 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> DEPTNO <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블 구조 표시</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> emp;</span><br><span class="line">desc emp;</span><br></pre></td></tr></table></figure></p>
+  </div>
+  <div class="article-entry">
+    <p><strong>CEIL 올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CEIL</span>(<span class="number">13.1</span>) <span class="keyword">FROM</span> DUAL;<span class="comment">--&gt; 결과: 14</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>FLOOR 내림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">FLOOR</span>(<span class="number">13.5</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">-- &gt;결과 : 13</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>MOD 나눈 나머지</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MOD</span>(<span class="number">5</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL;   <span class="comment">--&gt; 결과 2</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>POWER 승수</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">POWER</span>(<span class="number">2</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 8</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>ROUND 반올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">ROUND</span>(<span class="number">13.5</span>)  <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
+<p><strong>SIGN 부호</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SIGN</span>(<span class="number">13.4</span>) <span class="keyword">FROM</span> DUAL;  <span class="comment">--&gt;결과 1</span></span><br><span class="line">+ 일경우 결과 1</span><br><span class="line">0 일경우 결과 0</span><br><span class="line">- 일경우 결과 -1</span><br></pre></td></tr></table></figure></p>
+<p><strong>TRUNC 버림</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TRUNC(<span class="number">13.123456</span>)  <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 13</span></span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, 3) FROM DUAL; -&gt; 결과 13.123</span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, -1) FROM DUAL; -&gt;결과 10</span><br></pre></td></tr></table></figure></p>
 
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.e" target="_blank" title="Attribution-ShareAlike">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
         
-      </div>
-    </div>
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+      </span>
+    </a>
+  </div>
 
-  
-    </div>
-  
+
+    
+
+  </footer>
+</article>
+
 
 
 
