@@ -12,18 +12,20 @@
   
 </title>
 
-<meta name="description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM DU">
+<meta name="description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM D">
 <meta name="keywords" content="Oracle,SQL,SQL 날짜함수">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle SQL 날짜함수(SYSDATE&#x2F;ADD_MONTH&#x2F;LAST_DAY)">
 <meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM DU">
+<meta property="og:description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM D">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T04:57:57.234Z">
+<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta property="og:updated_time" content="2018-01-29T06:58:10.367Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle SQL 날짜함수(SYSDATE&#x2F;ADD_MONTH&#x2F;LAST_DAY)">
-<meta name="twitter:description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM DU">
+<meta name="twitter:description" content="SYSDATE 현재날짜1SELECT SYSDATE FROM DUAL; ADD_MONTH  날짜에 N만큼 더한 일자1SELECT SYSDATE, ADD_MONTHS(SYSDATE, -1) FROM DUAL; LAST_DAY 해당하는 월의 마지막 일자12SELECT LAST_DAY(TO_DATE(&apos;2018-04-24&apos;, &apos;YYYY-MM-DD&apos;)) FROM D">
+<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -180,7 +182,8 @@
 
   </div>
   <div class="article-entry">
-    <p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
+    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
+<p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
 <p><strong>ADD_MONTH  날짜에 N만큼 더한 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span>, ADD_MONTHS(<span class="keyword">SYSDATE</span>, <span class="number">-1</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
 <p><strong>LAST_DAY 해당하는 월의 마지막 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LAST_DAY</span>(<span class="keyword">TO_DATE</span>(<span class="string">'2018-04-24'</span>, <span class="string">'YYYY-MM-DD'</span>)) <span class="keyword">FROM</span> DUAL;  </span><br><span class="line">결과 <span class="comment">--&gt; 18/04/30</span></span><br></pre></td></tr></table></figure></p>
 

@@ -12,18 +12,20 @@
   
 </title>
 
-<meta name="description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE 7">
+<meta name="description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE">
 <meta name="keywords" content="Oracle,SQL,SQL Table">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle SQL 테이블명령어(테이블복사&#x2F;수정&#x2F;컬럼수정&#x2F;휴지동비우기)">
 <meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-테이블명령어-테이블복사-수정-컬럼수정-휴지동비우기/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE 7">
+<meta property="og:description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T05:18:22.464Z">
+<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta property="og:updated_time" content="2018-01-29T06:58:10.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle SQL 테이블명령어(테이블복사&#x2F;수정&#x2F;컬럼수정&#x2F;휴지동비우기)">
-<meta name="twitter:description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE 7">
+<meta name="twitter:description" content="ALTERTABLE TABLESCPACE 계정등을 수정할 때 ALTER RENAME  TO 테이블 이름 수정12ALTER TABLESPACE TABLESPACE1RENAME TO TEST_TBS_NEW; DATAFILE 파일 용량 수정12ALTER DATABASEDATAFILE &apos;C:\tablespace\FILE_SPECIFICATION1&apos; RESIZE">
+<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -180,7 +182,8 @@
 
   </div>
   <div class="article-entry">
-    <p><strong>ALTER</strong><br>TABLE TABLESCPACE 계정등을 수정할 때 ALTER</p>
+    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
+<p><strong>ALTER</strong><br>TABLE TABLESCPACE 계정등을 수정할 때 ALTER</p>
 <p><strong>RENAME  TO 테이블 이름 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLESPACE</span> TABLESPACE1</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TO</span> TEST_TBS_NEW;</span><br></pre></td></tr></table></figure></p>
 <p><strong>DATAFILE 파일 용량 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">DATABASE</span></span><br><span class="line"><span class="keyword">DATAFILE</span> <span class="string">'C:\tablespace\FILE_SPECIFICATION1'</span> <span class="keyword">RESIZE</span> <span class="number">7</span>M;</span><br></pre></td></tr></table></figure></p>
 <p><strong>테이블생성</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 테이블명 (컬럼)</span><br><span class="line"></span><br><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST01(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST02(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">)TABLESPACE TABLESPACE1; &lt;-- 계정 설정 부분</span><br></pre></td></tr></table></figure></p>

@@ -12,18 +12,20 @@
   
 </title>
 
-<meta name="description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYFR">
+<meta name="description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYF">
 <meta name="keywords" content="Oracle,SQL,SQL View">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle SQL View">
 <meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-View/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYFR">
+<meta property="og:description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYF">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T05:45:44.472Z">
+<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta property="og:updated_time" content="2018-01-29T06:57:57.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle SQL View">
-<meta name="twitter:description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYFR">
+<meta name="twitter:description" content="view : 가상테이블view는 실제로 저장되는 것은 아니다한개의 view로 여러개의 데이터를 검색할 수 있다제한을 설정할 수 있다 –readoniy다양하고 빠른 조회가 가능하다 12345ex)CREATE VIEW UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)ASSELECT JOB_ID, JOB_TITLE, MIN_SALARYF">
+<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -180,7 +182,8 @@
 
   </div>
   <div class="article-entry">
-    <h3 id="view-가상테이블"><a href="#view-가상테이블" class="headerlink" title="view : 가상테이블"></a>view : 가상테이블</h3><p>view는 실제로 저장되는 것은 아니다<br>한개의 view로 여러개의 데이터를 검색할 수 있다<br>제한을 설정할 수 있다 –readoniy<br>다양하고 빠른 조회가 가능하다</p>
+    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
+<h3 id="view-가상테이블"><a href="#view-가상테이블" class="headerlink" title="view : 가상테이블"></a>view : 가상테이블</h3><p>view는 실제로 저장되는 것은 아니다<br>한개의 view로 여러개의 데이터를 검색할 수 있다<br>제한을 설정할 수 있다 –readoniy<br>다양하고 빠른 조회가 가능하다</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> JOB_ID, JOB_TITLE, MIN_SALARY</span><br><span class="line"><span class="keyword">FROM</span> JOBS;</span><br></pre></td></tr></table></figure>
 <p>ex)두개의 테이블에 있는 데이터들을 VIEW을 통해서 한꺼번에 취득할때<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> DEPT_EMP_VIEW</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> A.EMPLOYEE_ID,FIRST_NAME,LAST_NAME,SALARY,A.DEPARTMENT_ID,DEPARTMENT_NAME,LOCATION_ID</span><br><span class="line"><span class="keyword">FROM</span> EMPLOYEES A, DEPARTMENTS B</span><br><span class="line"><span class="keyword">WHERE</span> A.DEPARTMENT_ID = B.DEPARTMENT_ID</span><br><span class="line"><span class="keyword">WITH</span>  <span class="keyword">READ</span> <span class="keyword">ONLY</span>;</span><br></pre></td></tr></table></figure></p>
 

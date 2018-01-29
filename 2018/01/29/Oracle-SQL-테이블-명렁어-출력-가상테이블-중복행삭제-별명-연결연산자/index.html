@@ -12,18 +12,20 @@
   
 </title>
 
-<meta name="description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
+<meta name="description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아">
 <meta name="keywords" content="Oracle,SQL,SQL Dual,SQL Distinct">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
 <meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
+<meta property="og:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T03:08:44.883Z">
+<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta property="og:updated_time" content="2018-01-29T06:58:10.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
-<meta name="twitter:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
+<meta name="twitter:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아">
+<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -180,7 +182,8 @@
 
   </div>
   <div class="article-entry">
-    <p><strong>테이블의 모든 데이터를 표현</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
+    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
+<p><strong>테이블의 모든 데이터를 표현</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
 <p><strong>테이블의 이름을 기록한 테이블 명세</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tab;</span><br></pre></td></tr></table></figure></p>
 <p><strong>테이블의 원하는 데이터만을 표현</strong><br>설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> EMPNO, ENAME, SAL <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
 <p><strong>DUAL : 가상테이블</strong><br>존재하고 있는 테이블이 아닌 DUAL의 가상테이블을 만들어 작업하기에 유용하게 쓸수있다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">10</span>+<span class="number">2</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">'hello'</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">round</span>(<span class="number">10.6</span>) <span class="keyword">FROM</span> dual;</span><br></pre></td></tr></table></figure></p>
