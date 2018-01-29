@@ -8,22 +8,20 @@
 
 <title>
   
-    Oracle SQL 테이블 명렁어(출력/가상테이블/중복행삭제/별명/연결연산자)
+    Tag: SQL View
   
 </title>
 
-<meta name="description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
-<meta name="keywords" content="Oracle,SQL,SQL Dual,SQL Distinct">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
-<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/index.html">
+<meta name="description" content="일단 연습하고 있습니다!!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KHS blog">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-View/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
+<meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-29T03:08:44.883Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle SQL 테이블 명렁어(출력&#x2F;가상테이블&#x2F;중복행삭제&#x2F;별명&#x2F;연결연산자)">
-<meta name="twitter:description" content="테이블의 모든 데이터를 표현1SELECT * FROM EMP; 테이블의 이름을 기록한 테이블 명세1ex) SELECT * FROM tab; 테이블의 원하는 데이터만을 표현설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다1ex) SELECT EMPNO, ENAME, SAL FROM EMP; DUAL : 가상테이블존재하고 있는 테이블이 아닌">
+<meta name="twitter:title" content="KHS blog">
+<meta name="twitter:description" content="일단 연습하고 있습니다!!">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -153,65 +151,54 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자" class="article article-type-post">
+          <h1>SQL View</h1>
+
+
   
-    <h1 class="article-header">
-      Oracle SQL 테이블 명렁어(출력/가상테이블/중복행삭제/별명/연결연산자)
-    </h1>
   
+    <div class="post-list">
   
 
-  <div class="article-info">
-    <span class="article-date">
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/29/Oracle-SQL-View/" >
+  Oracle SQL View
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/29/Oracle-SQL-View/"><span class="article-date">
   2018-01-29
 </span>
-
-    
+</a>
+        
 	<span class="article-category tagcloud">
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
 	</span>
 
 
-    
+        
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Distinct/">SQL Distinct</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Dual/">SQL Dual</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-View/">SQL View</a></li></ul>
 	</span>
 
 
-  </div>
-  <div class="article-entry">
-    <p><strong>테이블의 모든 데이터를 표현</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 이름을 기록한 테이블 명세</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tab;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 원하는 데이터만을 표현</strong><br>설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> EMPNO, ENAME, SAL <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>DUAL : 가상테이블</strong><br>존재하고 있는 테이블이 아닌 DUAL의 가상테이블을 만들어 작업하기에 유용하게 쓸수있다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">10</span>+<span class="number">2</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">'hello'</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">round</span>(<span class="number">10.6</span>) <span class="keyword">FROM</span> dual;</span><br></pre></td></tr></table></figure></p>
-<p><strong>alias : 별명 (대소문자 구분이 없음)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> sal*<span class="number">12</span> Money, sal money <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>|| 연결연산자 : 열이나 문자열을 다른열에 연결</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> ename || <span class="string">' has $ '</span> || sal <span class="keyword">FROM</span> EMP;</span><br><span class="line"><span class="keyword">SELECT</span> ename || comm <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure></p>
-<p><strong>distinct : 중복행 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> DEPTNO <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블 구조 표시</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> emp;</span><br><span class="line">desc emp;</span><br></pre></td></tr></table></figure></p>
-
-  </div>
-  <footer class="article-footer">
-    
-  <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.e" target="_blank" title="Attribution-ShareAlike">
-      <img src="/images/cc/cc.png">
-      
-          <img src="/images/cc/by.png">
+      </div>
+      <div class="article-entry">
         
-          <img src="/images/cc/sa.png">
-      
-      <span>
-        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-      </span>
-    </a>
-  </div>
+          <h3 id="view-가상테이블"><a href="#view-가상테이블" class="headerlink" title="view : 가상테이블"></a>view : 가상테이블</h3><p>view는 실제로 저장되는 것은 아니다<br>한개의 view로 여러개의 데이터를 검색할 수 있다<br>제한을 설정할 수 있다 –readoniy<br>다양하고 빠른 조회가 가능하다</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> JOB_ID, JOB_TITLE, MIN_SALARY</span><br><span class="line"><span class="keyword">FROM</span> JOBS;</span><br></pre></td></tr></table></figure>
+<p>ex)두개의 테이블에 있는 데이터들을 VIEW을 통해서 한꺼번에 취득할때<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> DEPT_EMP_VIEW</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> A.EMPLOYEE_ID,FIRST_NAME,LAST_NAME,SALARY,A.DEPARTMENT_ID,DEPARTMENT_NAME,LOCATION_ID</span><br><span class="line"><span class="keyword">FROM</span> EMPLOYEES A, DEPARTMENTS B</span><br><span class="line"><span class="keyword">WHERE</span> A.DEPARTMENT_ID = B.DEPARTMENT_ID</span><br><span class="line"><span class="keyword">WITH</span>  <span class="keyword">READ</span> <span class="keyword">ONLY</span>;</span><br></pre></td></tr></table></figure></p>
 
+        
+      </div>
+    </div>
 
-    
-
-  </footer>
-</article>
-
+  
+    </div>
+  
 
 
 
