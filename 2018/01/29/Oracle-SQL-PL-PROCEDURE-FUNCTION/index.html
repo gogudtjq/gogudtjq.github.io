@@ -8,24 +8,23 @@
 
 <title>
   
-    Oracle SQL 셋팅
+    Oracle SQL PL(PROCEDURE/FUNCTION)
   
 </title>
 
-<meta name="description" content="1234567891011121314151617SQL&amp;gt; connEnter user-name: systemEnter password:Connected.SQL&amp;gt; alter user hr  2  identified by hr  3  account unlock;User altered.SQL&amp;gt; discDisconnected from Oracle D">
-<meta name="keywords" content="Oracle,SQL">
+<meta name="description" content="Procedure : 처리자 특정 작업을 수행하는 이름이 있는 PL/SQLBlock 이다매개변수를 받고 반복적으로 수행 할 수있는 Block이다eclipse에서는 실행되지 않는다.  프러시져 지우기1DROP PROCEDURE update_sal;  &amp;lt;-- 프로시저명은 update_sal 프로시져 만드는과정1234567891011EX) EMPLOYEE">
+<meta name="keywords" content="Oracle,SQL,SQL PL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Oracle SQL 셋팅">
-<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-셋팅/index.html">
+<meta property="og:title" content="Oracle SQL PL(PROCEDURE&#x2F;FUNCTION)">
+<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-PL-PROCEDURE-FUNCTION/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="1234567891011121314151617SQL&amp;gt; connEnter user-name: systemEnter password:Connected.SQL&amp;gt; alter user hr  2  identified by hr  3  account unlock;User altered.SQL&amp;gt; discDisconnected from Oracle D">
+<meta property="og:description" content="Procedure : 처리자 특정 작업을 수행하는 이름이 있는 PL/SQLBlock 이다매개변수를 받고 반복적으로 수행 할 수있는 Block이다eclipse에서는 실행되지 않는다.  프러시져 지우기1DROP PROCEDURE update_sal;  &amp;lt;-- 프로시저명은 update_sal 프로시져 만드는과정1234567891011EX) EMPLOYEE">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
-<meta property="og:image" content="http://gogudtjq.github.io/2018/01/29/images/RunSQLCommand.png">
-<meta property="og:updated_time" content="2018-01-29T06:58:10.320Z">
+<meta property="og:updated_time" content="2018-01-29T07:13:49.742Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle SQL 셋팅">
-<meta name="twitter:description" content="1234567891011121314151617SQL&amp;gt; connEnter user-name: systemEnter password:Connected.SQL&amp;gt; alter user hr  2  identified by hr  3  account unlock;User altered.SQL&amp;gt; discDisconnected from Oracle D">
+<meta name="twitter:title" content="Oracle SQL PL(PROCEDURE&#x2F;FUNCTION)">
+<meta name="twitter:description" content="Procedure : 처리자 특정 작업을 수행하는 이름이 있는 PL/SQLBlock 이다매개변수를 받고 반복적으로 수행 할 수있는 Block이다eclipse에서는 실행되지 않는다.  프러시져 지우기1DROP PROCEDURE update_sal;  &amp;lt;-- 프로시저명은 update_sal 프로시져 만드는과정1234567891011EX) EMPLOYEE">
 <meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
 
 
@@ -156,10 +155,10 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-Oracle-SQL-셋팅" class="article article-type-post">
+          <article id="post-Oracle-SQL-PL-PROCEDURE-FUNCTION" class="article article-type-post">
   
     <h1 class="article-header">
-      Oracle SQL 셋팅
+      Oracle SQL PL(PROCEDURE/FUNCTION)
     </h1>
   
   
@@ -177,16 +176,25 @@
 
     
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-PL/">SQL PL</a></li></ul>
 	</span>
 
 
   </div>
   <div class="article-entry">
     <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><img src="../images/RunSQLCommand.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn</span><br><span class="line"></span><br><span class="line">Enter user-name: system</span><br><span class="line">Enter password:</span><br><span class="line">Connected.</span><br><span class="line">SQL&gt; alter user hr</span><br><span class="line">  2  identified by hr</span><br><span class="line">  3  account unlock;</span><br><span class="line"></span><br><span class="line">User altered.</span><br><span class="line"></span><br><span class="line">SQL&gt; disc</span><br><span class="line">Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bi</span><br><span class="line"> Production</span><br><span class="line">SQL&gt; conn hr/hr</span><br><span class="line">Connected.</span><br><span class="line">SQL&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="scott"><a href="#scott" class="headerlink" title="scott"></a>scott</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt; conn system/system</span><br><span class="line">Connected.</span><br><span class="line"></span><br><span class="line">SQL&gt; @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql</span><br><span class="line"></span><br><span class="line">SQL&gt; alter user scott identified by tiger;</span><br><span class="line"></span><br><span class="line">User altered.</span><br><span class="line"></span><br><span class="line">SQL&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Procedure-처리자"><a href="#Procedure-처리자" class="headerlink" title="Procedure : 처리자"></a>Procedure : 처리자</h3><blockquote>
+<p>특정 작업을 수행하는 이름이 있는 PL/SQLBlock 이다<br>매개변수를 받고 반복적으로 수행 할 수있는 Block이다<br>eclipse에서는 실행되지 않는다.</p>
+</blockquote>
+<p><strong>프러시져 지우기</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP PROCEDURE update_sal;  &lt;-- 프로시저명은 update_sal</span><br></pre></td></tr></table></figure></p>
+<p><strong>프로시져 만드는과정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">EX) EMPLOYEES라는 테이블에 사원번호를 입력받고 급여를 인상하기</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">PROCEDURE</span> update_sal (v_empno <span class="keyword">IN</span> <span class="built_in">NUMBER</span>)</span><br><span class="line">                                      <span class="comment">/*  IN PARAMETER   */</span></span><br><span class="line"><span class="keyword">IS</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">           <span class="keyword">UPDATE</span> EMPLOYEES</span><br><span class="line">           <span class="keyword">SET</span> SALARY = SALARY * <span class="number">1.1</span></span><br><span class="line">           <span class="keyword">WHERE</span> EMPLOYEE_ID = v_empno;</span><br><span class="line">           <span class="keyword">COMMIT</span>    <span class="comment">/*  저장하기 */</span></span><br><span class="line"><span class="keyword">END</span> update_sal;</span><br><span class="line">/</span><br></pre></td></tr></table></figure></p>
+<p><strong>프로시져 실행</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">EXECUTE</span> update_sal(<span class="number">207</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="FUNCTION"><a href="#FUNCTION" class="headerlink" title="FUNCTION"></a>FUNCTION</h3><blockquote>
+<p>SELECT절에서 사용할 시에는 주로 FUNCTION을 사용합니다.<br>INSERT, DELETE, UPDATE 는 FUNCTION에서 안먹힌다.<br>FUNCTION은 RETURN값을 가지고있다.</p>
+</blockquote>
+<p><strong>FUNCTION삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">FUNCTION</span> fc_update_sal;</span><br></pre></td></tr></table></figure></p>
+<p><strong>FUNCTION 만들기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">EX)</span><br><span class="line">자바에서는 NUMBER fc_update_Sal(NUMBER v_empno)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">FUNCTION</span> fc_update_sal(v_empno <span class="keyword">IN</span> <span class="built_in">NUMBER</span>) <span class="keyword">RETURN</span> <span class="built_in">NUMBER</span></span><br><span class="line"><span class="keyword">IS</span></span><br><span class="line">    v_sal EMPLOYEES.SALARY%<span class="keyword">TYPE</span>;  </span><br><span class="line"> <span class="comment">/*v_sal에 employees테이블안에 salary컬럼의 컬럼값 타입을 집어넣는다. */</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">            <span class="keyword">SELECT</span> SALARY * <span class="number">1.1</span> <span class="keyword">INTO</span> v_sal</span><br><span class="line">            <span class="keyword">FROM</span> EMPLOYEES</span><br><span class="line">            <span class="keyword">WHERE</span> EMPLOYEE_ID = v_empno;</span><br><span class="line"></span><br><span class="line">RETURN v_sal;</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line">/</span><br></pre></td></tr></table></figure></p>
+<p><strong>FUNCTION 실행</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">VAR salary NUMBER;</span><br><span class="line"><span class="comment">/*변수선언 자바에서 NUMBER salary 이거와 동일하다 var은 값이라고 생각 */</span></span><br><span class="line"><span class="keyword">EXECUTE</span> : salary := fc_update_sal(<span class="number">207</span>);</span><br><span class="line">PRINT salary;</span><br></pre></td></tr></table></figure></p>
 
   </div>
   <footer class="article-footer">
