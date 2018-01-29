@@ -8,14 +8,14 @@
 
 <title>
   
-    Tag: SQL Dual
+    Tag: SQL Table
   
 </title>
 
 <meta name="description" content="일단 연습하고 있습니다!!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-Dual/index.html">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-Table/index.html">
 <meta property="og:site_name" content="KHS blog">
 <meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
@@ -151,7 +151,7 @@
       
         <div style="max-width: 1000px">
       
-          <h1>SQL Dual</h1>
+          <h1>SQL Table</h1>
 
 
   
@@ -161,15 +161,15 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/" >
-  Oracle SQL 테이블 명렁어(출력/가상테이블/중복행삭제/별명/연결연산자)
+        <a href="/2018/01/29/Oracle-SQL-테이블명령어-테이블복사-수정-컬럼수정-휴지동비우기/" >
+  Oracle SQL 테이블명령어(테이블복사/수정/컬럼수정/휴지동비우기)
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-테이블-명렁어-출력-가상테이블-중복행삭제-별명-연결연산자/"><span class="article-date">
+        <a href="/2018/01/29/Oracle-SQL-테이블명령어-테이블복사-수정-컬럼수정-휴지동비우기/"><span class="article-date">
   2018-01-29
 </span>
 </a>
@@ -181,21 +181,28 @@
 
         
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Distinct/">SQL Distinct</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Dual/">SQL Dual</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Table/">SQL Table</a></li></ul>
 	</span>
 
 
       </div>
       <div class="article-entry">
         
-          <p><strong>테이블의 모든 데이터를 표현</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 이름을 기록한 테이블 명세</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tab;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블의 원하는 데이터만을 표현</strong><br>설명 : EMP 이라는 테이블의 EMPNO,ENAME,SAL 출력한다<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> EMPNO, ENAME, SAL <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>DUAL : 가상테이블</strong><br>존재하고 있는 테이블이 아닌 DUAL의 가상테이블을 만들어 작업하기에 유용하게 쓸수있다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">10</span>+<span class="number">2</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">'hello'</span> <span class="keyword">FROM</span> dual;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">round</span>(<span class="number">10.6</span>) <span class="keyword">FROM</span> dual;</span><br></pre></td></tr></table></figure></p>
-<p><strong>alias : 별명 (대소문자 구분이 없음)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> sal*<span class="number">12</span> Money, sal money <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>|| 연결연산자 : 열이나 문자열을 다른열에 연결</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> ename || <span class="string">' has $ '</span> || sal <span class="keyword">FROM</span> EMP;</span><br><span class="line"><span class="keyword">SELECT</span> ename || comm <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure></p>
-<p><strong>distinct : 중복행 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> DEPTNO <span class="keyword">FROM</span> EMP;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블 구조 표시</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> emp;</span><br><span class="line">desc emp;</span><br></pre></td></tr></table></figure></p>
+          <p><strong>ALTER</strong><br>TABLE TABLESCPACE 계정등을 수정할 때 ALTER</p>
+<p><strong>RENAME  TO 테이블 이름 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLESPACE</span> TABLESPACE1</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TO</span> TEST_TBS_NEW;</span><br></pre></td></tr></table></figure></p>
+<p><strong>DATAFILE 파일 용량 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">DATABASE</span></span><br><span class="line"><span class="keyword">DATAFILE</span> <span class="string">'C:\tablespace\FILE_SPECIFICATION1'</span> <span class="keyword">RESIZE</span> <span class="number">7</span>M;</span><br></pre></td></tr></table></figure></p>
+<p><strong>테이블생성</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 테이블명 (컬럼)</span><br><span class="line"></span><br><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST01(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST02(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">)TABLESPACE TABLESPACE1; &lt;-- 계정 설정 부분</span><br></pre></td></tr></table></figure></p>
+<p><strong>AS 테이블 복제(데이터를 포함해서 복제한다)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST03</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> JOBS;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST04</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> JOBS</span><br><span class="line"><span class="keyword">WHERE</span> <span class="number">1</span> = <span class="number">2</span>;  조건이 맞지않는 걸쓰면 컬럼이름만 복사해온다</span><br></pre></td></tr></table></figure></p>
+<p><strong>RENAME TO 테이블 이름수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST04</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TO</span> TB_TEST99;</span><br></pre></td></tr></table></figure></p>
+<p><strong>ADD 테이블 수정 : 단일컬럼 추가</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">ADD</span> COL_1 VARCHAR2(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
+<p><strong>ADD ( , ) 테이블 수정 : 다중컬럼 추가</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">( COL_2 VARCHAR2(<span class="number">30</span>), COL_3 VARCHAR2(<span class="number">10</span>) )</span><br></pre></td></tr></table></figure></p>
+<p><strong>MODIFY테이블 수정 : 단일컬럼 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">MODIFY</span></span><br><span class="line">COL_1 VARCHAR2(<span class="number">10</span>)</span><br></pre></td></tr></table></figure></p>
+<p><strong>MODIFY 테이블 수정 : 다중컬럼 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">MODIFY</span></span><br><span class="line">( COL_2 VARCHAR2(<span class="number">10</span>) , COL_3 VARCHAR2(<span class="number">10</span>) )</span><br></pre></td></tr></table></figure></p>
+<p><strong>DROP COLUMN 컬럼명 테이블 수정 : 단일컬럼 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">COLUMN</span> COL_1;</span><br></pre></td></tr></table></figure></p>
+<p><strong>DROP (컬럼명) 테이블수정 :다중컬럼삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">DROP</span> (COL_2, COL_3);</span><br></pre></td></tr></table></figure></p>
+<p><strong>RENAME COLUMN 컬럼명 TO 바꿀컬럼명 테이블 수정 : 컬럼명 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">COLUMN</span> COL_1 <span class="keyword">TO</span> 컬럼<span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p><strong>TABLE 삭제 (휴지통으로 간다)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> TB_TEST99</span><br></pre></td></tr></table></figure></p>
+<p><strong>휴지통 비우기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">PURGE</span> RECYCLEBIN;</span><br></pre></td></tr></table></figure></p>
 
         
       </div>
