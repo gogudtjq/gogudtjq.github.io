@@ -8,14 +8,14 @@
 
 <title>
   
-    Tag: SQL 날짜함수
+    Tag: JAVA_ORACLE_DB
   
 </title>
 
 <meta name="description" content="일단 연습하고 있습니다!!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-날짜함수/index.html">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/JAVA-ORACLE-DB/index.html">
 <meta property="og:site_name" content="KHS blog">
 <meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
@@ -151,7 +151,7 @@
       
         <div style="max-width: 1000px">
       
-          <h1>SQL 날짜함수</h1>
+          <h1>JAVA_ORACLE_DB</h1>
 
 
   
@@ -161,37 +161,80 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/" >
-  Oracle SQL 날짜함수(SYSDATE/ADD_MONTH/LAST_DAY)
+        <a href="/2018/01/29/Java-DBConnection-code-init-make/" >
+  Java DBConnection code(init/make)
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/"><span class="article-date">
+        <a href="/2018/01/29/Java-DBConnection-code-init-make/"><span class="article-date">
   2018-01-29
 </span>
 </a>
         
 	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Code/">Java Code</a></li></ul>
 	</span>
 
 
         
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-날짜함수/">SQL 날짜함수</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA-ORACLE-DB/">JAVA_ORACLE_DB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Server/">Server</a></li></ul>
 	</span>
 
 
       </div>
       <div class="article-entry">
         
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ADD_MONTH  날짜에 N만큼 더한 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span>, ADD_MONTHS(<span class="keyword">SYSDATE</span>, <span class="number">-1</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>LAST_DAY 해당하는 월의 마지막 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LAST_DAY</span>(<span class="keyword">TO_DATE</span>(<span class="string">'2018-04-24'</span>, <span class="string">'YYYY-MM-DD'</span>)) <span class="keyword">FROM</span> DUAL;  </span><br><span class="line">결과 <span class="comment">--&gt; 18/04/30</span></span><br></pre></td></tr></table></figure></p>
+          <p><img src="https://linuxhint.com/wp-content/uploads/2017/01/oracle-java.jpg" alt=""></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBConnection</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">initConnect</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Class.forName(<span class="string">"oracle.jdbc.driver.OracleDriver"</span>);</span><br><span class="line">			System.out.println(<span class="string">"Driver Loading Success!!"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">makeConnection</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Connection conn = <span class="keyword">null</span>;</span><br><span class="line">										<span class="comment">//로컬호스트에 아이피 주소 "jdbc:oracle:thin:@127.0.0.1:1521:xe"</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			conn = DriverManager.getConnection(<span class="string">"jdbc:oracle:thin:@localhost:1521:xe"</span>, <span class="string">"hr"</span>, <span class="string">"hr"</span>);</span><br><span class="line">			System.out.println(<span class="string">"DB Connection Success"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> conn;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/29/Java-DBClose-code/" >
+  Java DBClose code
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/29/Java-DBClose-code/"><span class="article-date">
+  2018-01-29
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Code/">Java Code</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA-ORACLE-DB/">JAVA_ORACLE_DB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Server/">Server</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p><img src="https://linuxhint.com/wp-content/uploads/2017/01/oracle-java.jpg" alt=""></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBClose</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">(Statement stmt, Connection conn, ResultSet rs)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">if</span>(stmt != <span class="keyword">null</span>) &#123;</span><br><span class="line">				stmt.close();</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(conn != <span class="keyword">null</span>) &#123;</span><br><span class="line">				conn.close();</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(rs != <span class="keyword">null</span>) &#123;</span><br><span class="line">				rs.close();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
       </div>
