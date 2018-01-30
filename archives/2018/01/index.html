@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">34</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">35</span></li></ul>
               </li>
             
           
@@ -163,6 +163,39 @@
           <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
         </div>
         <div class="post-list">
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/29/Test/" >
+  Test
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/29/Test/"><span class="article-date">
+  2018-01-29
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          
+        
+      </div>
+    </div>
+
+  
+
+  
+  
     
   
 
@@ -600,55 +633,6 @@
 <p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
 <p><strong>ADD_MONTH  날짜에 N만큼 더한 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span>, ADD_MONTHS(<span class="keyword">SYSDATE</span>, <span class="number">-1</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
 <p><strong>LAST_DAY 해당하는 월의 마지막 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LAST_DAY</span>(<span class="keyword">TO_DATE</span>(<span class="string">'2018-04-24'</span>, <span class="string">'YYYY-MM-DD'</span>)) <span class="keyword">FROM</span> DUAL;  </span><br><span class="line">결과 <span class="comment">--&gt; 18/04/30</span></span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC/" >
-  Oracle SQL 숫자함수(CEIL/FLOOR/MDD/POWER/ROUND/SIGN/TRUNC)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-숫자함수/">SQL 숫자함수</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>CEIL 올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CEIL</span>(<span class="number">13.1</span>) <span class="keyword">FROM</span> DUAL;<span class="comment">--&gt; 결과: 14</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>FLOOR 내림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">FLOOR</span>(<span class="number">13.5</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">-- &gt;결과 : 13</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>MOD 나눈 나머지</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MOD</span>(<span class="number">5</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL;   <span class="comment">--&gt; 결과 2</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>POWER 승수</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">POWER</span>(<span class="number">2</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 8</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>ROUND 반올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">ROUND</span>(<span class="number">13.5</span>)  <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>SIGN 부호</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SIGN</span>(<span class="number">13.4</span>) <span class="keyword">FROM</span> DUAL;  <span class="comment">--&gt;결과 1</span></span><br><span class="line">+ 일경우 결과 1</span><br><span class="line">0 일경우 결과 0</span><br><span class="line">- 일경우 결과 -1</span><br></pre></td></tr></table></figure></p>
-<p><strong>TRUNC 버림</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TRUNC(<span class="number">13.123456</span>)  <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 13</span></span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, 3) FROM DUAL; -&gt; 결과 13.123</span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, -1) FROM DUAL; -&gt;결과 10</span><br></pre></td></tr></table></figure></p>
 
         
       </div>
