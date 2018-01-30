@@ -8,14 +8,14 @@
 
 <title>
   
-    Tag: SQL 문자함수
+    Tag: HTML Tag Website
   
 </title>
 
 <meta name="description" content="일단 연습하고 있습니다!!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KHS blog">
-<meta property="og:url" content="http://gogudtjq.github.io/tags/SQL-문자함수/index.html">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/HTML-Tag-Website/index.html">
 <meta property="og:site_name" content="KHS blog">
 <meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
@@ -151,7 +151,7 @@
       
         <div style="max-width: 1000px">
       
-          <h1>SQL 문자함수</h1>
+          <h1>HTML Tag Website</h1>
 
 
   
@@ -161,41 +161,36 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-문자함수-CHR-INSTR-REPLACE-TRANSLATE-LENGTH-SUBSTR/" >
-  Oracle SQL 문자함수(CHR/INSTR/REPLACE/TRANSLATE/LENGTH/SUBSTR)
+        <a href="/2018/01/30/HTML-Tags/" >
+  HTML Tags
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-문자함수-CHR-INSTR-REPLACE-TRANSLATE-LENGTH-SUBSTR/"><span class="article-date">
-  2018-01-29
+        <a href="/2018/01/30/HTML-Tags/"><span class="article-date">
+  2018-01-30
 </span>
 </a>
         
 	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/HTML/">HTML</a></li></ul>
 	</span>
 
 
         
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-문자함수/">SQL 문자함수</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-Tag-Website/">HTML Tag Website</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-Tags/">HTML Tags</a></li></ul>
 	</span>
 
 
       </div>
       <div class="article-entry">
         
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>CHR(N): ACSII 값을 문자로 변환</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CHR</span>(<span class="number">65</span>)</span><br><span class="line">FROM DUAL;                             DUAL &lt;-- 가상테이블</span><br></pre></td></tr></table></figure></p>
-<p><strong>LPAD(RPAD) : 나머지를 특정 문자로 채움</strong><br>(‘문자’,’문자길이수’,’나머지로 채울 문자’)<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">LPAD</span>(<span class="string">'BBB'</span>, <span class="number">10</span>, <span class="string">'-'</span>) <span class="keyword">FROM</span> DUAL;   LPAD : 왼쪽부터 채움</span><br><span class="line">ex) <span class="keyword">SELECT</span> RPAD(<span class="string">'BBB'</span>, <span class="number">10</span>, <span class="string">'-'</span>) <span class="keyword">FROM</span> DUAL;   RPAD : 오른쪽부터</span><br></pre></td></tr></table></figure></p>
-<p><strong>INSTR: indexOf</strong><br>자바에 indexOf 라고 생각하면된다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ex) <span class="keyword">SELECT</span> <span class="keyword">INSTR</span>(<span class="string">'A1234B5678A1234B'</span>, <span class="string">'A'</span>) <span class="keyword">FROM</span> DUAL;   'A'의 위치를 왼쪽부터 찾는다 결과 : 1</span><br></pre></td></tr></table></figure></p>
-<p><strong>REPLACE : 문자열 치환(문자열)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">REPLACE</span>(<span class="string">'AAAAAAVVVVSXACDA'</span>, <span class="string">'AA'</span>, <span class="string">'ㄱ'</span>) <span class="keyword">FROM</span> DUAL;</span><br><span class="line">    문자열의 A문자가 ㄱ으로 다바뀐다.</span><br><span class="line">    결과 : ㄱㄱㄱVVVVSXACSDA</span><br></pre></td></tr></table></figure></p>
-<p><strong>TRANSLATE : 문자 치환(한문자)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">TRANSLATE</span>(<span class="string">'AAAAAAVVVVSXACDA'</span>, <span class="string">'AA'</span>, <span class="string">'ㄱ'</span>) <span class="keyword">FROM</span> DUAL;</span><br><span class="line">    문자열의 A문자가 ㄱ으로 다바뀐다.</span><br><span class="line">    결과 ㄱㄱㄱㄱㄱㄱVVVVSXㄱCDㄱ</span><br></pre></td></tr></table></figure></p>
-<p><strong>LENGTH : 문자 길이</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LENGTH</span>(<span class="string">'ABCDEFG'</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>SUBSTR</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT SUBSTR('ABCDEFG', 3) FROM DUAL;  -&gt; 결과 -- 3번째부터 쭉~~~ 가져온다 CDEFG</span><br><span class="line">SELECT SUBSTR('ABCDEFG', 3, 2) FROM DUAL; -&gt;결과 -- 3번째부터 2글자 CD</span><br></pre></td></tr></table></figure></p>
+          <p><img src="http://www.webdevelopmenthelp.net/wp-content/uploads/2015/09/HTML55.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">i</span>&gt;</span>이탤릭 기울기<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">u</span>&gt;</span>밑줄입니다<span class="tag">&lt;/<span class="name">u</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>이 점을 <span class="tag">&lt;<span class="name">em</span>&gt;</span>강조<span class="tag">&lt;/<span class="name">em</span>&gt;</span>하고 싶습니다<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>Html <span class="tag">&lt;<span class="name">mark</span>&gt;</span>Marked<span class="tag">&lt;/<span class="name">mark</span>&gt;</span> Formattiong<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">del</span>&gt;</span>보시는 글은 삭제된 글입니다<span class="tag">&lt;/<span class="name">del</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>이것은 <span class="tag">&lt;<span class="name">sub</span>&gt;</span>아래첨자<span class="tag">&lt;/<span class="name">sub</span>&gt;</span> 텍스트입니다<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>이것은 <span class="tag">&lt;<span class="name">sup</span>&gt;</span>윗첨자 <span class="tag">&lt;/<span class="name">sup</span>&gt;</span> 텍스트입니다<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">style</span>=<span class="string">"list-style-type: circle;"</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">""</span>&gt;</span>강아지<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span>&gt;</span>고양이<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span>&gt;</span>햄스터<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>HTML 참조 사이트</strong><br><a href="https://www.w3schools.com/" target="_blank" rel="noopener"><img src="http://www.intertech.com/Blog/wp-content/uploads/2015/07/w3schools-logo-1.png" alt="w3schools"></a><br><a href="http://www.htmq.com/" target="_blank" rel="noopener"><img src="http://www.htmq.com/images/logo.gif" alt="HTML"></a></p>
 
         
       </div>
