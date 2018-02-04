@@ -8,24 +8,20 @@
 
 <title>
   
-    Oracle SQL 무결성 제약조건(PRIMARY KEY/UNIQUE KEY/CHECK)
+    Tag: JSP 지시문 page
   
 </title>
 
-<meta name="description" content="PRIMARY KEY 기본키, NULL을 허용하지 않음, 중복을 허용하지않음, 예를들어 : ID 또는 주민번호  1.테이블생성시 PRIMARY KEY 만들기1234CREATE TABLE TEST_01(    KEY_01 VARCHAR2(30) CONSTRAINT PK_TEST_01 PRIMARY KEY,    COL_01 VARCHAR2(20),) 2.테">
-<meta name="keywords" content="Oracle,SQL,SQL KEY">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Oracle SQL 무결성 제약조건(PRIMARY KEY&#x2F;UNIQUE KEY&#x2F;CHECK)">
-<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-무결성-제약조건-PRIMARY-KEY-UNIQUE-KEY-CHECK/index.html">
+<meta name="description" content="일단 연습하고 있습니다!!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KHS blog">
+<meta property="og:url" content="http://gogudtjq.github.io/tags/JSP-지시문-page/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="PRIMARY KEY 기본키, NULL을 허용하지 않음, 중복을 허용하지않음, 예를들어 : ID 또는 주민번호  1.테이블생성시 PRIMARY KEY 만들기1234CREATE TABLE TEST_01(    KEY_01 VARCHAR2(30) CONSTRAINT PK_TEST_01 PRIMARY KEY,    COL_01 VARCHAR2(20),) 2.테">
+<meta property="og:description" content="일단 연습하고 있습니다!!">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
-<meta property="og:updated_time" content="2018-01-29T06:58:10.354Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle SQL 무결성 제약조건(PRIMARY KEY&#x2F;UNIQUE KEY&#x2F;CHECK)">
-<meta name="twitter:description" content="PRIMARY KEY 기본키, NULL을 허용하지 않음, 중복을 허용하지않음, 예를들어 : ID 또는 주민번호  1.테이블생성시 PRIMARY KEY 만들기1234CREATE TABLE TEST_01(    KEY_01 VARCHAR2(30) CONSTRAINT PK_TEST_01 PRIMARY KEY,    COL_01 VARCHAR2(20),) 2.테">
-<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta name="twitter:title" content="KHS blog">
+<meta name="twitter:description" content="일단 연습하고 있습니다!!">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -155,74 +151,134 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-Oracle-SQL-무결성-제약조건-PRIMARY-KEY-UNIQUE-KEY-CHECK" class="article article-type-post">
+          <h1>JSP 지시문 page</h1>
+
+
   
-    <h1 class="article-header">
-      Oracle SQL 무결성 제약조건(PRIMARY KEY/UNIQUE KEY/CHECK)
-    </h1>
   
+    <div class="post-list">
   
 
-  <div class="article-info">
-    <span class="article-date">
-  2018-01-29
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/02/04/Jsp-지시문/" >
+  Jsp 지시문
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/02/04/Jsp-지시문/"><span class="article-date">
+  2018-02-04
 </span>
-
-    
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-    
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-KEY/">SQL KEY</a></li></ul>
-	</span>
-
-
-  </div>
-  <div class="article-entry">
-    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<h3 id="PRIMARY-KEY"><a href="#PRIMARY-KEY" class="headerlink" title="PRIMARY KEY"></a>PRIMARY KEY</h3><blockquote>
-<p>기본키, NULL을 허용하지 않음, 중복을 허용하지않음, 예를들어 : ID 또는 주민번호</p>
-</blockquote>
-<p><strong>1.테이블생성시 PRIMARY KEY 만들기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TEST_01(</span><br><span class="line">    KEY_01 VARCHAR2(<span class="number">30</span>) <span class="keyword">CONSTRAINT</span> PK_TEST_01 PRIMARY <span class="keyword">KEY</span>,</span><br><span class="line">    COL_01 VARCHAR2(<span class="number">20</span>),</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
-<p><strong>2.테이블생성시 다중 PRIMARY KEY만들기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TEST_01(</span><br><span class="line">    KEY_01 VARCHAR2(<span class="number">30</span>),</span><br><span class="line">    KEY_02 VARCHAR2(<span class="number">30</span>),</span><br><span class="line">    <span class="keyword">CONSTRAINT</span> PK_TEST_01 PRIMARY <span class="keyword">KEY</span>(KEY_01, KEY_02)</span><br><span class="line">            <span class="keyword">USING</span> <span class="keyword">INDEX</span> <span class="keyword">TABLESPACE</span> <span class="keyword">USERS</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
-<p><strong>3.기본키에 추가하기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TEST_01 <span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> PK_TEST_01 PRIMARY <span class="keyword">KEY</span>(KEY_01 , KEY_02)</span><br></pre></td></tr></table></figure></p>
-<p><strong>4.기본키에 삭제하기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TEST_01 <span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> PK_TEST_01;</span><br></pre></td></tr></table></figure></p>
-<p><strong>5.PRIMARY KEY 확인 QUERY</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> USER_CONSTRAINTS</span><br><span class="line"><span class="keyword">WHERE</span> TABLE_NAME = <span class="string">'TEST_01'</span></span><br><span class="line">        <span class="keyword">AND</span> CONSTRAINTS_TYPE = <span class="string">'P'</span>;</span><br></pre></td></tr></table></figure></p>
-<h3 id="UNIQUE-KEY"><a href="#UNIQUE-KEY" class="headerlink" title="UNIQUE KEY"></a>UNIQUE KEY</h3><blockquote>
-<p>고유키, NULL을 허용한다. 중복을 허용하지 않음, 예를들어 : E-MAIL</p>
-</blockquote>
-<p><strong>1.테이블 생성시 UNIQUE KEY 만들기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TEST_01(</span><br><span class="line">    UKEY_01 VARCHAR2(<span class="number">10</span>) <span class="keyword">CONSTRAINT</span> UK_TEST_01 <span class="keyword">UNIQUE</span>,  &lt;&lt;<span class="comment">--이렇게 다중 등록도 가능</span></span><br><span class="line">    UKEY_02 VARCHAR2(<span class="number">10</span>) <span class="keyword">CONSTRAINT</span> UK_TEST_02 <span class="keyword">UNIQUE</span>,  &lt;&lt;<span class="comment">--┘</span></span><br><span class="line">    COL_01 VARCHAR2(<span class="number">10</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
-<h3 id="CHECK"><a href="#CHECK" class="headerlink" title="CHECK"></a>CHECK</h3><blockquote>
-<p>데이터의 값의 범위, 특정한 값의 지정이 가능, NULL을 허용한다. 지정한값외에 NULL값까지만 쓸수있다.<br>중복도 허용한다<br>예를 들어 성별(남자,여자)</p>
-</blockquote>
-<p><strong>1.테이블 생성시 CHECK 만들기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TEST_01(</span><br><span class="line">    KEY_01 VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    KEY_02 VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    COL_01 VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    COL_02 <span class="built_in">NUMBER</span>,</span><br><span class="line">    <span class="keyword">CONSTRAINT</span> CHK_TEST_01 <span class="keyword">CHECK</span>(COL_01 <span class="keyword">IN</span> (<span class="string">'남자'</span>,<span class="string">'여자'</span>,<span class="string">'기타'</span>)),</span><br><span class="line">    <span class="keyword">CONSTRAINT</span> CHK_TEST_02 <span class="keyword">CHECK</span>(COL_02 &gt;= <span class="number">1</span> <span class="keyword">AND</span> COL_02 &lt;= <span class="number">999</span>)</span><br><span class="line"> );</span><br></pre></td></tr></table></figure></p>
-
-  </div>
-  <footer class="article-footer">
-    
-  <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.e" target="_blank" title="Attribution-ShareAlike">
-      <img src="/images/cc/cc.png">
-      
-          <img src="/images/cc/by.png">
+</a>
         
-          <img src="/images/cc/sa.png">
-      
-      <span>
-        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-      </span>
-    </a>
-  </div>
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JSP/">JSP</a></li></ul>
+	</span>
 
 
-    
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JSP/">JSP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JSP-지시문/">JSP 지시문</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JSP-지시문-page/">JSP 지시문 page</a></li></ul>
+	</span>
 
-  </footer>
-</article>
 
+      </div>
+      <div class="article-entry">
+        
+          <p><strong>지시문&lt;%@　　　　 %&gt;</strong></p>
+<blockquote>
+<p>이 페이지는 JSP의 지시자<br>page 지시어와 include 지시문에 대해 설명합니다.<br>이 밖에 taglib 지시문도 정의되어 있지만<br>taglib 지시문에 관해서는 설명 요소가<br>많기 때문에 다른 페이지에서 설명합니다.</p>
+</blockquote>
+<p><strong>Page 지시문 특성</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">속성이름</th>
+<th style="text-align:center">설명</th>
+<th style="text-align:center">기본</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import</td>
+<td style="text-align:center">JSP 프로그램에서 가져올 클래스 패키지를 지정합니다.</td>
+<td style="text-align:center">java.lang.<em><br> javax.servlet.</em><br> javax.servelt.jsp.<em><br> javax.servlet.http.</em></td>
+</tr>
+<tr>
+<td style="text-align:center">contentType</td>
+<td style="text-align:center">JSP 프로그램의 응답시의 MIME 타입과 문자 인코딩을 지정합니다.</td>
+<td style="text-align:center">text/html; charset=utf-8</td>
+</tr>
+<tr>
+<td style="text-align:center">pageEncoding</td>
+<td style="text-align:center">JSP 프로그램을 Servlet 프로그램으로 변환 할 때의 문자 인코딩을 지정합니다.</td>
+<td style="text-align:center">utf-8</td>
+</tr>
+<tr>
+<td style="text-align:center">seesion</td>
+<td style="text-align:center">HTTP 세션을 사용할지 여부를 지정합니다.<br> HTTP 세션을 사용하지 않는 경우는 부하를 고려하여 false로 설정합니다.<br> true로 설정 한 경우는 암시 개체의 session을 사용할 수 있습니다.</td>
+<td style="text-align:center">Ture</td>
+</tr>
+<tr>
+<td style="text-align:center">buffer</td>
+<td style="text-align:center">클라이언트로 전송하는 데이터를 버퍼링 할 때 버퍼의 용량을 지정합니다.<br> 용량은 kb로 지정합니다.<br> 기본 크기는 8kb입니다.<br> 버퍼하지 않으면 none을 지정합니다.</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">autoFlush</td>
+<td style="text-align:center">버퍼 데이터가 쌓여 때 자동으로 클라이언트에 데이터를 보낼 것인지를 지정합니다.</td>
+<td style="text-align:center">true</td>
+</tr>
+<tr>
+<td style="text-align:center">extends</td>
+<td style="text-align:center">JSP 프로그램의 기본이 되는 클래스를 지정합니다.<br> “javax.servlet.jsp.HttpJspPage”가 지정되어 있습니다.</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">errorPage</td>
+<td style="text-align:center">JSP 프로그램에서 잡을 수 없는 예외를 처리 할 페이지를 지정합니다.</td>
+<td style="text-align:center">null</td>
+</tr>
+<tr>
+<td style="text-align:center">isErrorPage</td>
+<td style="text-align:center">예외를 처리하는 페이지가 JSP 프로그램의 경우 true를 지정해야합니다.<br> HTML의 경우는 true를 지정할 필요가 없습니다.</td>
+<td style="text-align:center">false</td>
+</tr>
+<tr>
+<td style="text-align:center">isElgnored</td>
+<td style="text-align:center">JSP 2.0에서 사용할 수있게 된 표현 언어(EL)를 적용할지 여부를 지정합니다<br> true의 경우는 적용하지 않습니다.<br> false로 설정하면 수식 언어(EL)를 적용합니다</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">isThreadSafe</td>
+<td style="text-align:center">스레드 모드를 지정합니다.<br> true를 지정하면 하나의 개체에 대해 여러 개의 스레드를 동시에 처리합니다.<br> 이 경우 스레드의 베타 제어를하지 않고 예상치 못한 처리가 될 수 있습니다.</td>
+<td style="text-align:center">true</td>
+</tr>
+<tr>
+<td style="text-align:center">info</td>
+<td style="text-align:center">JSP 프로그램 정보를 제공합니다.<br> 지정된 값을 getServletinfo 메소드로 취득 할 수 있습니다.</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">language</td>
+<td style="text-align:center">JSP 프로그램에서 사용하는 언어를 지정합니다.<br> JSP2.0에서 적절되는 언어는 java뿐입니다.</td>
+<td style="text-align:center">java</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Page ex</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(ex 1) MIME 타입 "text/html"인코딩 "Windows-31J"버퍼를 "16k 바이트“</span></span><br><span class="line">autoFlush를 <span class="string">"true"</span>로 설정 한 예입니다.</span><br><span class="line">&lt;% @ page contentType=<span class="string">"text/html; charset=Windows-31J"</span></span><br><span class="line">	pageEncoding=<span class="string">"Windows-31J"</span> buffer=<span class="string">"16kb"</span> autoFlush=<span class="string">"true"</span>%&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//(ex 2) 가져올 패키지 "java.util.*, java.io.*"를 지정한 예입니다. </span></span><br><span class="line"><span class="keyword">import</span> 속성은 여러 값을 지정할 수 있습니다.</span><br><span class="line">&lt;% @ page <span class="keyword">import</span> = <span class="string">"java.util.*, java.io.*"</span>%&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//(ex 3) page 지시어를 import 속성별로 나누어 지정한 예입니다.</span></span><br><span class="line">&lt;% @ page <span class="keyword">import</span> = <span class="string">"java.util.*"</span>%&gt;</span><br><span class="line">&lt;% @ page <span class="keyword">import</span> = <span class="string">"java.io.*"</span>%&gt;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
 
 
