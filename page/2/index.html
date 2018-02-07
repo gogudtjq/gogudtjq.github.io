@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">48</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">49</span></li></ul>
               </li>
             
           
@@ -152,6 +152,50 @@
         <div style="max-width: 1000px">
       
           
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/02/01/Dispathch-Include/" >
+  Dispathch/Include
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/02/01/Dispathch-Include/"><span class="article-date">
+  2018-02-01
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Include-Forward/">Include/Forward</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Forward/">Forward</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Include/">Include</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>Include(가져오기)<br>ex)A &lt;- B<br>현재상태 A를 유지하며 B를 가져온다<br>forward(이동)<br>ex)A -&gt; B<br>현재상태가 B로 이동한다.</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   
@@ -590,53 +634,6 @@
 <p><strong>while문</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">ON</span>;</span><br><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">     V_CNT <span class="built_in">NUMBER</span> := <span class="number">0</span>;</span><br><span class="line">     V_TOT NUMBER := 0;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">    <span class="keyword">WHILE</span> V_CNT &lt; <span class="number">10</span></span><br><span class="line">    <span class="keyword">LOOP</span></span><br><span class="line">        V_CNT := V_CNT + <span class="number">1</span>;</span><br><span class="line">        V_TOT := V_TOT + V_CNT;</span><br><span class="line">    <span class="keyword">END</span> <span class="keyword">LOOP</span>;</span><br><span class="line"></span><br><span class="line">    DBMS_OUTPUT.put_line('V_CNT : ' || V_CNT );</span><br><span class="line">    DBMS_OUTPUT.PUT_LINE('V_TOT :' || V_TOT );</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line">/</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">OFF</span>;</span><br></pre></td></tr></table></figure></p>
 <p><strong>FOR문</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">ON</span>;</span><br><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">     V_CNT <span class="built_in">NUMBER</span> := <span class="number">0</span>;</span><br><span class="line">     V_TOT NUMBER := 0;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">    <span class="keyword">FOR</span> V_CNT <span class="keyword">IN</span> <span class="number">1</span> .. <span class="number">10</span></span><br><span class="line">    <span class="keyword">LOOP</span></span><br><span class="line">        V_TOT := V_TOT + V_CNT;</span><br><span class="line">    <span class="keyword">END</span> <span class="keyword">LOOP</span>;</span><br><span class="line"></span><br><span class="line">    DBMS_OUTPUT.put_line('V_CNT : ' || V_CNT );</span><br><span class="line">    DBMS_OUTPUT.PUT_LINE('V_TOT :' || V_TOT );</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line">/</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">OFF</span>;</span><br></pre></td></tr></table></figure></p>
 <p><strong>CASE GOTO</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">ON</span>;</span><br><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">    V_NAME VARCHAR2(<span class="number">30</span>) := <span class="string">'김형섭'</span>;</span><br><span class="line">    V_CASE NUMBER := 1;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">    <span class="keyword">CASE</span> <span class="keyword">WHEN</span> <span class="keyword">MOD</span>(V_CASE, <span class="number">2</span>) = <span class="number">0</span>  <span class="keyword">THEN</span> <span class="keyword">GOTO</span> TEST1;</span><br><span class="line">            WHEN MOD(V_CASE, 2) = 1 THEN GOTO TEST2;</span><br><span class="line">            ELSE GOTO ERR;</span><br><span class="line">    <span class="keyword">END</span> <span class="keyword">CASE</span>;</span><br><span class="line">        &lt;&lt;TEST1&gt;&gt;</span><br><span class="line">             DBMS_OUTPUT.PUT_LINE(V_NAME || ' TEST1 들어왔어' );</span><br><span class="line">             GOTO SUB_END;</span><br><span class="line">        &lt;&lt;TEST2&gt;&gt;</span><br><span class="line">            DBMS_OUTPUT.PUT_LINE(V_NAME || ' TEST2 들어왔어' );</span><br><span class="line">             GOTO SUB_END;</span><br><span class="line">        &lt;&lt;ERR&gt;&gt;</span><br><span class="line">            DBMS_OUTPUT.PUT_LINE(V_NAME || ' 에러얌' );</span><br><span class="line">             GOTO SUB_END;</span><br><span class="line"></span><br><span class="line">        &lt;&lt;SUB_END&gt;&gt;</span><br><span class="line">            DBMS_OUTPUT.PUT_LINE('EXIT ' || V_NAME);</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line">/</span><br><span class="line"><span class="keyword">SET</span> SERVEROUTPUT <span class="keyword">OFF</span>;</span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-View/" >
-  Oracle SQL View
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-View/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-View/">SQL View</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<h3 id="view-가상테이블"><a href="#view-가상테이블" class="headerlink" title="view : 가상테이블"></a>view : 가상테이블</h3><p>view는 실제로 저장되는 것은 아니다<br>한개의 view로 여러개의 데이터를 검색할 수 있다<br>제한을 설정할 수 있다 –readoniy<br>다양하고 빠른 조회가 가능하다</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> JOB_ID, JOB_TITLE, MIN_SALARY</span><br><span class="line"><span class="keyword">FROM</span> JOBS;</span><br></pre></td></tr></table></figure>
-<p>ex)두개의 테이블에 있는 데이터들을 VIEW을 통해서 한꺼번에 취득할때<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> DEPT_EMP_VIEW</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> A.EMPLOYEE_ID,FIRST_NAME,LAST_NAME,SALARY,A.DEPARTMENT_ID,DEPARTMENT_NAME,LOCATION_ID</span><br><span class="line"><span class="keyword">FROM</span> EMPLOYEES A, DEPARTMENTS B</span><br><span class="line"><span class="keyword">WHERE</span> A.DEPARTMENT_ID = B.DEPARTMENT_ID</span><br><span class="line"><span class="keyword">WITH</span>  <span class="keyword">READ</span> <span class="keyword">ONLY</span>;</span><br></pre></td></tr></table></figure></p>
 
         
       </div>

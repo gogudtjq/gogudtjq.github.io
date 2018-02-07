@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">48</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">49</span></li></ul>
               </li>
             
           
@@ -152,6 +152,42 @@
         <div style="max-width: 1000px">
       
           
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/02/07/고급태그/" >
+  고급태그
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/02/07/고급태그/"><span class="article-date">
+  2018-02-07
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <p><strong>El 태그 표현방식</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">&lt;%=<span class="string">'값'</span> &gt;  </span><br><span class="line">$&#123;<span class="string">'값 '</span>&#125;</span><br><span class="line"><span class="comment">//동일한 방법이다</span></span><br><span class="line">$&#123;<span class="number">3</span> &lt; <span class="number">2</span> ? <span class="string">'진실'</span> : <span class="string">'거짓'</span> &#125;</span><br><span class="line"><span class="comment">//이런것도 가능</span></span><br><span class="line"></span><br><span class="line">변수의 data가 비어 있는지?(==<span class="keyword">null</span>)</span><br><span class="line">data = $&#123;empty data &#125;</span><br><span class="line"><span class="comment">//empty : null 이면 true반환</span></span><br><span class="line"><span class="comment">//		null 아니면 false반환</span></span><br><span class="line"></span><br><span class="line">변수의 data가 비어 있찌 않는지?(=!<span class="keyword">null</span>)</span><br><span class="line">data = $&#123;not empty data &#125;</span><br><span class="line">&lt;%-- empty 반대의미 --%&gt;</span><br><span class="line"></span><br><span class="line">eq:$&#123;a eq b &#125;	&lt;!-- 같은가?? 참이면 <span class="keyword">true</span> 틀리면 flase --&gt;</span><br><span class="line">eq:$&#123;a == b &#125;</span><br><span class="line"></span><br><span class="line">ne: $&#123;a ne b&#125;	&lt;!-- not 같지않다 의미 --&gt;</span><br><span class="line">ne: $&#123;a != b&#125;</span><br><span class="line"></span><br><span class="line">lt: $&#123;a lt b&#125;</span><br><span class="line">lt: $&#123;a &lt; b&#125;</span><br><span class="line"></span><br><span class="line">gt: $&#123;a gt b&#125;</span><br><span class="line">gt: $&#123;a &gt; b &#125;</span><br><span class="line"></span><br><span class="line">le: $&#123;a le b&#125;</span><br><span class="line">le: $&#123;a &lt;= b&#125;</span><br><span class="line"></span><br><span class="line">ge: $&#123;a ge b&#125;</span><br><span class="line">ge: $&#123;a &gt;= b&#125;</span><br><span class="line"></span><br><span class="line">div: $&#123;a div b&#125;</span><br><span class="line">div: $&#123;a / b&#125;</span><br><span class="line"></span><br><span class="line">mod: $&#123;a mod b&#125;</span><br><span class="line">mod: $&#123;a % b&#125;</span><br><span class="line"></span><br><span class="line">boo: $&#123;!boo&#125; <span class="comment">//boo는 booelan 변수명</span></span><br><span class="line"></span><br><span class="line">$&#123;a == <span class="number">10</span> &amp;&amp; !boo &#125;</span><br><span class="line"></span><br><span class="line">request.setAttribute(<span class="string">"StringDate"</span>, <span class="string">"testtest"</span>);</span><br><span class="line">StringDate:$&#123;requsetScope.StringDate &#125; <span class="comment">//정석</span></span><br><span class="line">StringDate:$&#123;StringDate &#125;</span><br><span class="line"></span><br><span class="line">JspTestBean bean = <span class="keyword">new</span> JspTestBean(); <span class="comment">//dto</span></span><br><span class="line">bean.setMessage(<span class="string">"hi EL tag"</span>); <span class="comment">//dto 안에 massage라는 변수</span></span><br><span class="line">request.setAttribute(<span class="string">"bean"</span>, bean);</span><br><span class="line">bean:&lt;%=bean.getMessage() %&gt;</span><br><span class="line">bean:$&#123;bean.message &#125;</span><br><span class="line"></span><br><span class="line">String array[] = <span class="keyword">new</span> String[]&#123;<span class="string">"hello"</span>, <span class="string">"world"</span>&#125;;	<span class="comment">//정석 코드</span></span><br><span class="line">request.setAttribute(<span class="string">"array"</span>, array);</span><br><span class="line"></span><br><span class="line">array:$&#123;array[<span class="number">0</span>] &#125;  <span class="comment">//el 배열 표현방식</span></span><br><span class="line"></span><br><span class="line">list :$&#123;list.get(<span class="number">1</span>) &#125; <span class="comment">//el 리스트 표현방식</span></span><br><span class="line"></span><br><span class="line">HashMap&lt;String, String&gt; map = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</span><br><span class="line">map.put(<span class="string">"key"</span>, <span class="string">"value"</span>);</span><br><span class="line">map.put(<span class="string">"key2"</span>, <span class="string">"value2"</span>);</span><br><span class="line">request.setAttribute(<span class="string">"map"</span>, map);</span><br><span class="line"></span><br><span class="line">map : $&#123; map.get(<span class="string">"key"</span>)&#125;  <span class="comment">//HashMap 표현방식</span></span><br><span class="line">map:  $&#123; map.key &#125;</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   
@@ -636,50 +672,6 @@
 <p>request(요청)<br>response(응답)</p>
 <p>request(요청) : GET(open), POST(close)<br>기본예<br><strong>HTML</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"GetForm"</span> <span class="attr">method</span>=<span class="string">"get"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"GET방식"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"PostForm"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"POST방식"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>xml</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;servlet&gt;</span><br><span class="line">  &lt;servlet-name&gt;get&lt;/servlet-name&gt;</span><br><span class="line">     //이름 (mapping과 같은 이름을 타고 온다)</span><br><span class="line">  &lt;servlet-class&gt;sample06.helloservlet&lt;/servlet-class&gt;</span><br><span class="line">     //</span><br><span class="line">&lt;/servlet&gt;</span><br><span class="line"></span><br><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">  &lt;servlet-name&gt;get&lt;/servlet-name&gt;</span><br><span class="line">              //이름</span><br><span class="line">  &lt;url-pattern&gt;/GetForm&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br><span class="line"></span><br><span class="line">&lt;servlet&gt;</span><br><span class="line">  &lt;servlet-name&gt;post&lt;/servlet-name&gt;</span><br><span class="line">  &lt;servlet-class&gt;sample06.helloservlet&lt;/servlet-class&gt;</span><br><span class="line">&lt;/servlet&gt;</span><br><span class="line"></span><br><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">  &lt;servlet-name&gt;post&lt;/servlet-name&gt;</span><br><span class="line">  &lt;url-pattern&gt;/PostForm&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/02/01/Dispathch-Include/" >
-  Dispathch/Include
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/02/01/Dispathch-Include/"><span class="article-date">
-  2018-02-01
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Include-Forward/">Include/Forward</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Forward/">Forward</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Include/">Include</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Include(가져오기)<br>ex)A &lt;- B<br>현재상태 A를 유지하며 B를 가져온다<br>forward(이동)<br>ex)A -&gt; B<br>현재상태가 B로 이동한다.</p>
 
         
       </div>
