@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">56</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">55</span></li></ul>
               </li>
             
           
@@ -152,41 +152,6 @@
         <div style="max-width: 1000px">
       
           
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Test/" >
-  Test
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Test/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
 
   
   
@@ -519,11 +484,7 @@
       </div>
       <div class="article-entry">
         
-          <p>머야<br><a href="https://youtu.be/vaoIOiqPWd4" target="_blank" rel="noopener">https://youtu.be/vaoIOiqPWd4</a></p>
-<p><img src="https://youtu.be/vaoIOiqPWd4" alt=""></p>
-<p><img src="https://www.youtube.com/watch?v=WTTc8Bjsz8k" alt=""></p>
-<p><a href="https://youtu.be/uLR1RNqJ1Mw?t=0s" target="_blank" rel="noopener"><img src="http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg" alt="Video Label"></a></p>
-
+          
         
       </div>
     </div>
@@ -643,6 +604,53 @@
 <p><strong>TABLE 삭제 (휴지통으로 간다)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> TB_TEST99</span><br></pre></td></tr></table></figure></p>
 <p><strong>테이블 삭제와 키값 말끔히 삭제하기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 테이블명</span><br><span class="line"><span class="keyword">CASCADE</span> <span class="keyword">CONSTRAINTS</span>;</span><br><span class="line">~</span><br></pre></td></tr></table></figure></p>
 <p><strong>휴지통 비우기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">PURGE</span> RECYCLEBIN;</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/" >
+  Oracle SQL 날짜함수(SYSDATE/ADD_MONTH/LAST_DAY)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/"><span class="article-date">
+  2018-01-29
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-날짜함수/">SQL 날짜함수</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
+<p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
+<p><strong>ADD_MONTH  날짜에 N만큼 더한 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span>, ADD_MONTHS(<span class="keyword">SYSDATE</span>, <span class="number">-1</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
+<p><strong>LAST_DAY 해당하는 월의 마지막 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LAST_DAY</span>(<span class="keyword">TO_DATE</span>(<span class="string">'2018-04-24'</span>, <span class="string">'YYYY-MM-DD'</span>)) <span class="keyword">FROM</span> DUAL;  </span><br><span class="line">결과 <span class="comment">--&gt; 18/04/30</span></span><br></pre></td></tr></table></figure></p>
 
         
       </div>
