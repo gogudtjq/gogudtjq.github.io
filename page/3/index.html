@@ -513,49 +513,6 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2018/01/29/Project-SemiProject/" >
-  SemiProject
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Project-SemiProject/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/1차-프로젝트/">1차 프로젝트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project/">Project</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
         <a href="/2018/01/29/Oracle-SQL-View/" >
   Oracle SQL View
 </a>
@@ -587,6 +544,50 @@
 <h3 id="view-가상테이블"><a href="#view-가상테이블" class="headerlink" title="view : 가상테이블"></a>view : 가상테이블</h3><p>view는 실제로 저장되는 것은 아니다<br>한개의 view로 여러개의 데이터를 검색할 수 있다<br>제한을 설정할 수 있다 –readoniy<br>다양하고 빠른 조회가 가능하다</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> UV_TEST_01(JOB_ID, JOB_TITLE,MIN_SALARY)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> JOB_ID, JOB_TITLE, MIN_SALARY</span><br><span class="line"><span class="keyword">FROM</span> JOBS;</span><br></pre></td></tr></table></figure>
 <p>ex)두개의 테이블에 있는 데이터들을 VIEW을 통해서 한꺼번에 취득할때<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> DEPT_EMP_VIEW</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> A.EMPLOYEE_ID,FIRST_NAME,LAST_NAME,SALARY,A.DEPARTMENT_ID,DEPARTMENT_NAME,LOCATION_ID</span><br><span class="line"><span class="keyword">FROM</span> EMPLOYEES A, DEPARTMENTS B</span><br><span class="line"><span class="keyword">WHERE</span> A.DEPARTMENT_ID = B.DEPARTMENT_ID</span><br><span class="line"><span class="keyword">WITH</span>  <span class="keyword">READ</span> <span class="keyword">ONLY</span>;</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/29/Project-SemiProject/" >
+  SemiProject
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/29/Project-SemiProject/"><span class="article-date">
+  2018-01-29
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Project/">Project</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/1차-프로젝트/">1차 프로젝트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project/">Project</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/vaoIOiqPWd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
         
       </div>
