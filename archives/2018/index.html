@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">56</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">55</span></li></ul>
               </li>
             
           
@@ -188,48 +188,6 @@
       <div class="article-entry">
         
           
-        
-      </div>
-    </div>
-
-  
-
-  
-  
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/04/30/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/04/30/hello-world/"><span class="article-date">
-  2018-04-30
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
         
       </div>
     </div>
@@ -593,6 +551,54 @@
         
           <p><strong><em>저장</em></strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">memberDTO dto = <span class="keyword">new</span> memberDTO(<span class="number">12</span> , <span class="string">"김형섭"</span>);</span><br><span class="line"></span><br><span class="line">session.setAttribute(<span class="string">"mem"</span>, dto);</span><br><span class="line">application.setAttribute(<span class="string">"mem"</span>, dto);</span><br><span class="line">request.setAttribute(<span class="string">"mem"</span>, dto);</span><br><span class="line"></span><br><span class="line"><span class="comment">//이동</span></span><br><span class="line">response.sendRedirect(<span class="string">"NewFile.jsp"</span>);</span><br><span class="line">pageContext.forward(<span class="string">"NewFile.jsp"</span>);</span><br></pre></td></tr></table></figure></p>
 <p><strong><em>저장된거 받기</em></strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">memberDTO memdto = (memberDTO)session.getAttribute(<span class="string">"mem"</span>);</span><br><span class="line">memberDTO memdto = (memberDTO)application.getAttribute(<span class="string">"mem"</span>);</span><br><span class="line">memberDTO memdto = (memberDTO)request.getAttribute(<span class="string">"mem"</span>);</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/02/05/이동/" >
+  이동
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/02/05/이동/"><span class="article-date">
+  2018-02-05
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/page-값-가지고-넘기는-방법/">page 값 가지고 넘기는 방법</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-action/">이동 action</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-forward/">이동 forward</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-location/">이동 location</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-sendRedirect/">이동 sendRedirect</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line">ex)</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> <span class="attr">localhost:8090</span>/<span class="attr">sample</span>/<span class="attr">action.jsp</span>?<span class="attr">age</span>=<span class="string">12&amp;addr</span>=<span class="string">서울시</span></span></span><br><span class="line"><span class="tag"><span class="attr">xxx.xxx.xxx.xxx</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="java-script"><a href="#java-script" class="headerlink" title="java script"></a>java script</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.href = <span class="string">"action.jsp?age="</span> + age + <span class="string">"&amp;addr="</span> + addr;</span><br></pre></td></tr></table></figure>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">forward</span><br><span class="line">sendRedirect (response 소속)</span><br></pre></td></tr></table></figure>
+<p><strong>ex) Tag form의 action</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"서울시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action=<span class="string">"NewFile.jsp"</span> method=<span class="string">"get"</span>&gt;</span><br><span class="line">	&lt;input type=<span class="string">"text"</span> name=<span class="string">"age"</span> value=<span class="string">"10"</span>&gt;</span><br><span class="line">	&lt;input type=<span class="string">"text"</span> name=<span class="string">"addr"</span> value=&lt;%=addr %&gt; &gt;</span><br><span class="line">	&lt;input type=<span class="string">"submit"</span> name=<span class="string">"btn"</span> value=<span class="string">"보내기"</span>&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>ex) java script의 location</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> age = <span class="built_in">document</span>.getElementById(<span class="string">"age"</span>).value;</span><br><span class="line">	location.href =<span class="string">"NewFile.jsp?age="</span>+ age + <span class="string">"&amp;addr="</span> + <span class="string">"&lt;%=addr %&gt;"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>ex) java의 forward</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"대구시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%</span><br><span class="line">pageContext.forward(<span class="string">"NewFile.jsp?age=10&amp;addr="</span>+ URLEncoder.encode(addr, <span class="string">"utf-8"</span>));</span><br><span class="line"><span class="comment">//URLEncoder.encode : 넘길때 언어지정</span></span><br><span class="line"><span class="comment">//pageContext : 암시객체</span></span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>ex) java의 sendRedirect</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"서울시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%</span><br><span class="line">response.sendRedirect(<span class="string">"NewFile.jsp?age=12&amp;addr="</span>+URLEncoder.encode(addr, <span class="string">"utf-8"</span>));</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure></p>
 
         
       </div>

@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">56</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">55</span></li></ul>
               </li>
             
           
@@ -152,66 +152,6 @@
         <div style="max-width: 1000px">
       
           
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-테이블명령어-테이블복사-수정-컬럼수정-휴지동비우기/" >
-  Oracle SQL 테이블명령어(테이블복사/수정/컬럼수정/휴지동비우기)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-테이블명령어-테이블복사-수정-컬럼수정-휴지동비우기/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-Table/">SQL Table</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>ALTER</strong><br>TABLE TABLESCPACE 계정등을 수정할 때 ALTER</p>
-<p><strong>RENAME  TO 테이블 이름 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLESPACE</span> TABLESPACE1</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TO</span> TEST_TBS_NEW;</span><br></pre></td></tr></table></figure></p>
-<p><strong>DATAFILE 파일 용량 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">DATABASE</span></span><br><span class="line"><span class="keyword">DATAFILE</span> <span class="string">'C:\tablespace\FILE_SPECIFICATION1'</span> <span class="keyword">RESIZE</span> <span class="number">7</span>M;</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블생성</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 테이블명 (컬럼)</span><br><span class="line"></span><br><span class="line">ex)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST01(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST02(</span><br><span class="line">    컬럼<span class="number">1</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">2</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">3</span> VARCHAR2(<span class="number">10</span>),</span><br><span class="line">    컬럼<span class="number">4</span> VARCHAR2(<span class="number">10</span>)</span><br><span class="line">)TABLESPACE TABLESPACE1; &lt;-- 계정 설정 부분</span><br></pre></td></tr></table></figure></p>
-<p><strong>AS 테이블 복제(데이터를 포함해서 복제한다)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST03</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> JOBS;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> TB_TEST04</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> JOBS</span><br><span class="line"><span class="keyword">WHERE</span> <span class="number">1</span> = <span class="number">2</span>;  조건이 맞지않는 걸쓰면 컬럼이름만 복사해온다</span><br></pre></td></tr></table></figure></p>
-<p><strong>RENAME TO 테이블 이름수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST04</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TO</span> TB_TEST99;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ADD 테이블 수정 : 단일컬럼 추가</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">ADD</span> COL_1 VARCHAR2(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
-<p><strong>ADD ( , ) 테이블 수정 : 다중컬럼 추가</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">ADD</span></span><br><span class="line">( COL_2 VARCHAR2(<span class="number">30</span>), COL_3 VARCHAR2(<span class="number">10</span>) )</span><br></pre></td></tr></table></figure></p>
-<p><strong>MODIFY테이블 수정 : 단일컬럼 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">MODIFY</span></span><br><span class="line">COL_1 VARCHAR2(<span class="number">10</span>)</span><br></pre></td></tr></table></figure></p>
-<p><strong>MODIFY 테이블 수정 : 다중컬럼 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">MODIFY</span></span><br><span class="line">( COL_2 VARCHAR2(<span class="number">10</span>) , COL_3 VARCHAR2(<span class="number">10</span>) )</span><br></pre></td></tr></table></figure></p>
-<p><strong>DROP COLUMN 컬럼명 테이블 수정 : 단일컬럼 삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">COLUMN</span> COL_1;</span><br></pre></td></tr></table></figure></p>
-<p><strong>DROP (컬럼명) 테이블수정 :다중컬럼삭제</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">DROP</span> (COL_2, COL_3);</span><br></pre></td></tr></table></figure></p>
-<p><strong>RENAME COLUMN 컬럼명 TO 바꿀컬럼명 테이블 수정 : 컬럼명 수정</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> TB_TEST99</span><br><span class="line"><span class="keyword">RENAME</span> <span class="keyword">COLUMN</span> COL_1 <span class="keyword">TO</span> 컬럼<span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
-<p><strong>TABLE 삭제 (휴지통으로 간다)</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> TB_TEST99</span><br></pre></td></tr></table></figure></p>
-<p><strong>테이블 삭제와 키값 말끔히 삭제하기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 테이블명</span><br><span class="line"><span class="keyword">CASCADE</span> <span class="keyword">CONSTRAINTS</span>;</span><br><span class="line">~</span><br></pre></td></tr></table></figure></p>
-<p><strong>휴지통 비우기</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">PURGE</span> RECYCLEBIN;</span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
 
   
   
@@ -628,6 +568,50 @@
       <div class="article-entry">
         
           <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ReadFile</span><span class="params">()</span></span>&#123;</span><br><span class="line">       <span class="comment">//Read 읽을수 있는지 확인하고 한문장씩 가져오기</span></span><br><span class="line">       File file = <span class="keyword">new</span> File(<span class="string">"c:\\TestFile\\tst.txt"</span>);</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="keyword">if</span>(checkBeforeReadFile(file))&#123;</span><br><span class="line">              FileReader fileReader = <span class="keyword">new</span> FileReader(file);</span><br><span class="line">              <span class="keyword">int</span> ch; <span class="comment">//문자 담을곳</span></span><br><span class="line">              <span class="keyword">while</span> ((ch = fileReader.read()) != -<span class="number">1</span>)&#123;   <span class="comment">//EOF == -1</span></span><br><span class="line">                System.out.println((<span class="keyword">char</span>)ch);</span><br><span class="line">              &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ReadFile</span><span class="params">()</span></span>&#123;</span><br><span class="line">       <span class="comment">//한문장씩 파일 읽기</span></span><br><span class="line">       File file = <span class="keyword">new</span> File(<span class="string">"c:\\TestFile\\tst.txt"</span>);</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">         BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(file));</span><br><span class="line">         <span class="comment">//Buffer == 저장공간 라인을 저장하여 불러들인다. 한문장씩 가져오기</span></span><br><span class="line">         String str;</span><br><span class="line">         <span class="keyword">while</span>((str=br.readLine()) != <span class="keyword">null</span>)&#123;</span><br><span class="line">           System.out.println(str);</span><br><span class="line">         &#125;</span><br><span class="line">         br.close();</span><br><span class="line">         &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkBeforeReadFile</span><span class="params">(File f)</span></span>&#123;</span><br><span class="line">       <span class="comment">/*</span></span><br><span class="line"><span class="comment">         파일을 읽을수 있는지 확인하는 메소드</span></span><br><span class="line"><span class="comment">         반환값: boolean</span></span><br><span class="line"><span class="comment">         결과  : 파일을 읽을수 있으면 true 반환</span></span><br><span class="line"><span class="comment">                 아닐시 false 반환</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">       <span class="keyword">if</span>(f.exists())&#123;</span><br><span class="line">         <span class="keyword">if</span>(f.isFile() &amp;&amp; f.canRead()) &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-File-폴더생성-파일생성-존재여부-삭제하기-읽기가능여부-쓰기가능여부/" >
+  Java File(폴더생성/파일생성/존재여부/삭제하기/읽기가능여부/쓰기가능여부)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-File-폴더생성-파일생성-존재여부-삭제하기-읽기가능여부-쓰기가능여부/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Code/">Java Code</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA-File/">JAVA File</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">File</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//지정한 폴더의 파일 생성하기</span></span><br><span class="line">    File newfile = <span class="keyword">new</span> File(<span class="string">"c:\\tmp\\TestFile.txt"</span>);</span><br><span class="line">    <span class="keyword">if</span>(newfile.createNewFile())&#123;              <span class="comment">//try catch 묶어주기</span></span><br><span class="line">       System.out.println(<span class="string">"파일 생성 성공"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"파일 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//폴더 생성</span></span><br><span class="line">    String dirStr = <span class="string">"c:\\Test\\"</span>;</span><br><span class="line">    File newFo = <span class="keyword">new</span> File(dirStr);</span><br><span class="line">    <span class="keyword">if</span>(newFo.mkdirs())&#123;</span><br><span class="line">       System.out.println(<span class="string">"디렉터리 생성 성공"</span>);</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"디렉터리 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//폴더와 파일 같이 생성</span></span><br><span class="line">    String filename = <span class="string">"TestFile"</span>+<span class="string">".txt"</span>;</span><br><span class="line">    String dirStr =<span class="string">"c:\\Test\\"</span>;</span><br><span class="line">    File myFile = <span class="keyword">new</span> File(dirStr + filename);</span><br><span class="line">    <span class="keyword">if</span>(myFile.createNewFile())&#123;</span><br><span class="line">        System.out.println(<span class="string">"폴더와 파일 생성 성공"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"폴더와 파일 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//파일 존재 여부</span></span><br><span class="line">    myFile.exists() <span class="comment">//반환값 boolean : 있을시 true</span></span><br><span class="line">    <span class="comment">//파일 삭제 하기</span></span><br><span class="line">    myFile.delete() <span class="comment">//반환값 boolean</span></span><br><span class="line">    <span class="comment">//파일 읽기 가능여부</span></span><br><span class="line">    myFile.canRead() <span class="comment">//반환값 boolean</span></span><br><span class="line">    <span class="comment">//파일 쓰기 가능여부</span></span><br><span class="line">    myFile.canWrite()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
       </div>

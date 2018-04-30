@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">56</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">55</span></li></ul>
               </li>
             
           
@@ -152,56 +152,6 @@
         <div style="max-width: 1000px">
       
           
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/02/05/이동/" >
-  이동
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/02/05/이동/"><span class="article-date">
-  2018-02-05
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/page-값-가지고-넘기는-방법/">page 값 가지고 넘기는 방법</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-action/">이동 action</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-forward/">이동 forward</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-location/">이동 location</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/이동-sendRedirect/">이동 sendRedirect</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <h3 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line">ex)</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> <span class="attr">localhost:8090</span>/<span class="attr">sample</span>/<span class="attr">action.jsp</span>?<span class="attr">age</span>=<span class="string">12&amp;addr</span>=<span class="string">서울시</span></span></span><br><span class="line"><span class="tag"><span class="attr">xxx.xxx.xxx.xxx</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="java-script"><a href="#java-script" class="headerlink" title="java script"></a>java script</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.href = <span class="string">"action.jsp?age="</span> + age + <span class="string">"&amp;addr="</span> + addr;</span><br></pre></td></tr></table></figure>
-<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">forward</span><br><span class="line">sendRedirect (response 소속)</span><br></pre></td></tr></table></figure>
-<p><strong>ex) Tag form의 action</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"서울시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action=<span class="string">"NewFile.jsp"</span> method=<span class="string">"get"</span>&gt;</span><br><span class="line">	&lt;input type=<span class="string">"text"</span> name=<span class="string">"age"</span> value=<span class="string">"10"</span>&gt;</span><br><span class="line">	&lt;input type=<span class="string">"text"</span> name=<span class="string">"addr"</span> value=&lt;%=addr %&gt; &gt;</span><br><span class="line">	&lt;input type=<span class="string">"submit"</span> name=<span class="string">"btn"</span> value=<span class="string">"보내기"</span>&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ex) java script의 location</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> age = <span class="built_in">document</span>.getElementById(<span class="string">"age"</span>).value;</span><br><span class="line">	location.href =<span class="string">"NewFile.jsp?age="</span>+ age + <span class="string">"&amp;addr="</span> + <span class="string">"&lt;%=addr %&gt;"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ex) java의 forward</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"대구시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%</span><br><span class="line">pageContext.forward(<span class="string">"NewFile.jsp?age=10&amp;addr="</span>+ URLEncoder.encode(addr, <span class="string">"utf-8"</span>));</span><br><span class="line"><span class="comment">//URLEncoder.encode : 넘길때 언어지정</span></span><br><span class="line"><span class="comment">//pageContext : 암시객체</span></span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ex) java의 sendRedirect</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String addr = <span class="string">"서울시"</span>;</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%</span><br><span class="line">response.sendRedirect(<span class="string">"NewFile.jsp?age=12&amp;addr="</span>+URLEncoder.encode(addr, <span class="string">"utf-8"</span>));</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
 
   
   
@@ -693,6 +643,60 @@
 <p>Session get<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.getAttribute(<span class="string">"visited"</span>);</span><br></pre></td></tr></table></figure></p>
 <p>Session del<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session.invalidate();</span><br></pre></td></tr></table></figure></p>
 <p>Session 안에 object del<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(session != <span class="keyword">null</span>) &#123;</span><br><span class="line">   session.removeAttribute(<span class="string">"age"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/30/HTML-Tags/" >
+  HTML Tags
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/30/HTML-Tags/"><span class="article-date">
+  2018-01-30
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/HTML/">HTML</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-Tag-Website/">HTML Tag Website</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-Tags/">HTML Tags</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p><img src="http://www.webdevelopmenthelp.net/wp-content/uploads/2015/09/HTML55.png" alt=""></p>
+<p><strong>간단한 태그들</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span>&gt;</span>이탤릭기울기<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">u</span>&gt;</span>밑줄<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">em</span>&gt;</span>강조<span class="tag">&lt;/<span class="name">em</span>&gt;</span>   </span><br><span class="line">  <span class="tag">&lt;<span class="name">mark</span>&gt;</span>Marked<span class="tag">&lt;/<span class="name">mark</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">del</span>&gt;</span>삭제된글<span class="tag">&lt;/<span class="name">del</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">sub</span>&gt;</span>아래첨자<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">sup</span>&gt;</span>윗첨자<span class="tag">&lt;/<span class="name">sup</span>&gt;</span>   </span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span>         </span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span>&gt;</span>강아지<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span>&gt;</span>고양이<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">li</span>&gt;</span>햄스터<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span>   범위를 설정으로 묶는다. 자체만으로는 의미가 없음</span><br><span class="line">  <span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">"1"</span> <span class="attr">color</span>=<span class="string">"blue"</span>&gt;</span>폰트크기 1 폰트컬러 블루<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.google.com/"</span>&gt;</span>link Google !<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>= <span class="string">""</span> <span class="attr">src</span>=<span class="string">"어린왕자.jpg"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>결과</strong></p>
+<p><i>이탤릭기울기</i><br><u>밑줄</u><br><em>강조</em><br><mark>Marked</mark><br><del>삭제된글</del><br><sub>아래첨자</sub><br><sup>윗첨자</sup>   </p>
+<p><ul><br>   <li>강아지</li><br>   <li>고양이</li><br>   <li>햄스터</li><br></ul></p>
+<font size="1" color="blue">폰트크기 1 폰트컬러 블루</font>
+
+<p><a href="https://www.google.com/" target="_blank" rel="noopener">link Google !</a><br><img src="../images/어린왕자.jpg" alt=""></p>
+<p><strong>HTML 참조 사이트</strong></p>
+<p><a href="https://www.w3schools.com/" target="_blank" rel="noopener"><img src="http://www.intertech.com/Blog/wp-content/uploads/2015/07/w3schools-logo-1.png" alt="w3schools"></a></p>
+<p><a href="http://www.htmq.com/" target="_blank" rel="noopener"><img src="http://www.htmq.com/images/logo.gif" alt="HTML"></a></p>
 
         
       </div>
