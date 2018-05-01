@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">55</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">54</span></li></ul>
               </li>
             
           
@@ -125,19 +125,7 @@
           
             
               <li>
-                <a href="https://github.com/denjones/hexo-theme-chan" title="Chan" target="_blank" rel="noopener">Chan</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="https://github.com/denjones" title="Github" target="_blank" rel="noopener">Github</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/atom.xml" title="RSS">RSS</a>
+                <a href="https://github.com/gogudtjq" title="Github" target="_blank" rel="noopener">Github</a>
               </li>
             
           
@@ -163,51 +151,6 @@
           <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
         </div>
         <div class="post-list">
-    
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/" >
-  Oracle SQL 날짜함수(SYSDATE/ADD_MONTH/LAST_DAY)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/01/29/Oracle-SQL-날짜함수-SYSDATE-ADD-MONTH-LAST-DAY/"><span class="article-date">
-  2018-01-29
-</span>
-</a>
-        
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-날짜함수/">SQL 날짜함수</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>SYSDATE 현재날짜</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span> <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>ADD_MONTH  날짜에 N만큼 더한 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SYSDATE</span>, ADD_MONTHS(<span class="keyword">SYSDATE</span>, <span class="number">-1</span>) <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>LAST_DAY 해당하는 월의 마지막 일자</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">LAST_DAY</span>(<span class="keyword">TO_DATE</span>(<span class="string">'2018-04-24'</span>, <span class="string">'YYYY-MM-DD'</span>)) <span class="keyword">FROM</span> DUAL;  </span><br><span class="line">결과 <span class="comment">--&gt; 18/04/30</span></span><br></pre></td></tr></table></figure></p>
-
-        
-      </div>
-    </div>
-
-  
-
-  
-  
     
   
 
@@ -602,6 +545,48 @@
       <div class="article-entry">
         
           <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">File</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//지정한 폴더의 파일 생성하기</span></span><br><span class="line">    File newfile = <span class="keyword">new</span> File(<span class="string">"c:\\tmp\\TestFile.txt"</span>);</span><br><span class="line">    <span class="keyword">if</span>(newfile.createNewFile())&#123;              <span class="comment">//try catch 묶어주기</span></span><br><span class="line">       System.out.println(<span class="string">"파일 생성 성공"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"파일 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//폴더 생성</span></span><br><span class="line">    String dirStr = <span class="string">"c:\\Test\\"</span>;</span><br><span class="line">    File newFo = <span class="keyword">new</span> File(dirStr);</span><br><span class="line">    <span class="keyword">if</span>(newFo.mkdirs())&#123;</span><br><span class="line">       System.out.println(<span class="string">"디렉터리 생성 성공"</span>);</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"디렉터리 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//폴더와 파일 같이 생성</span></span><br><span class="line">    String filename = <span class="string">"TestFile"</span>+<span class="string">".txt"</span>;</span><br><span class="line">    String dirStr =<span class="string">"c:\\Test\\"</span>;</span><br><span class="line">    File myFile = <span class="keyword">new</span> File(dirStr + filename);</span><br><span class="line">    <span class="keyword">if</span>(myFile.createNewFile())&#123;</span><br><span class="line">        System.out.println(<span class="string">"폴더와 파일 생성 성공"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"폴더와 파일 생성 실패"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//파일 존재 여부</span></span><br><span class="line">    myFile.exists() <span class="comment">//반환값 boolean : 있을시 true</span></span><br><span class="line">    <span class="comment">//파일 삭제 하기</span></span><br><span class="line">    myFile.delete() <span class="comment">//반환값 boolean</span></span><br><span class="line">    <span class="comment">//파일 읽기 가능여부</span></span><br><span class="line">    myFile.canRead() <span class="comment">//반환값 boolean</span></span><br><span class="line">    <span class="comment">//파일 쓰기 가능여부</span></span><br><span class="line">    myFile.canWrite()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/01/26/Java-Calendar관련code-get-년-월-일-오전오후-그달의-마지막날-set-캘린더윗칸수-밑칸수/" >
+  Java Calendar관련code(get[년/월/일/오전오후/그달의 마지막날]/set/캘린더윗칸수/밑칸수)
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/01/26/Java-Calendar관련code-get-년-월-일-오전오후-그달의-마지막날-set-캘린더윗칸수-밑칸수/"><span class="article-date">
+  2018-01-26
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java-Code/">Java Code</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/">JAVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA-Calendar/">JAVA Calendar</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Calendear</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//Calendar cal = new GregorianCalendar();</span></span><br><span class="line">    Calendar cal = Calendar.getInstance();    <span class="comment">//&lt;-동일한 방법</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// get 현재 날짜 얻기</span></span><br><span class="line">    <span class="keyword">int</span> year = cal.get(Calendar.YEAR);</span><br><span class="line">    <span class="keyword">int</span> month = cal.get(Calendar.MONTH)+<span class="number">1</span>;<span class="comment">// 0 ~ 11 시작해서 +1</span></span><br><span class="line">    <span class="keyword">int</span> day = cal.get(Calendar.DATE);</span><br><span class="line">    <span class="keyword">int</span> weekDay = cal.get(Calendar.DAY_OF_WEEK); <span class="comment">// 반환값 int 요일 1 ~ 7  1= 일요일</span></span><br><span class="line">    <span class="keyword">int</span> lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH); <span class="comment">//지정한 달의 마지막 날짜</span></span><br><span class="line">    String ampm = cal.get(Calendar.AM_PM)==<span class="number">0</span> ? <span class="string">"오전"</span> : <span class="string">"오후"</span>; <span class="comment">//반환값 int</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// set 날짜 설정하기</span></span><br><span class="line">    cal.set(Calendar.YEAR, <span class="number">2018</span>);</span><br><span class="line">    cal.set(Calendar.MONTH, Calendar.APRIL); <span class="comment">//4월</span></span><br><span class="line">    cal.set(Calendar.MONTH,<span class="number">11</span> - <span class="number">1</span>);  <span class="comment">//11월달</span></span><br><span class="line">    cal.set(Calendar.DATE, <span class="number">25</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//그외 캘린더의 윗쪽빈칸수, 밑쪽빈칸수 구하기</span></span><br><span class="line">    <span class="comment">//윗칸수</span></span><br><span class="line">    <span class="keyword">int</span> _day = (weekDay - <span class="number">1</span>) % <span class="number">7</span>;   <span class="comment">//weekday ? weekDay = cal.get(Calendar.DAY_OF_WEEK);</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//밑칸수</span></span><br><span class="line">    <span class="keyword">int</span> _lastday = <span class="number">7</span> - weekDay;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
       </div>
