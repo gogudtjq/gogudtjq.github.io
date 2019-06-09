@@ -8,24 +8,22 @@
 
 <title>
   
-    Oracle SQL 숫자함수(CEIL/FLOOR/MDD/POWER/ROUND/SIGN/TRUNC)
+    문제풀이-Marathon(해시)
   
 </title>
 
-<meta name="description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;">
-<meta name="keywords" content="Oracle,SQL,SQL 숫자함수">
+<meta name="description" content="문제  수많은 마라톤 선수들이 마라톤에 참여하였습니다.단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때,완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.  제한사항  마라톤">
+<meta name="keywords" content="CodingTest-2019&#x2F;06&#x2F;09">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Oracle SQL 숫자함수(CEIL&#x2F;FLOOR&#x2F;MDD&#x2F;POWER&#x2F;ROUND&#x2F;SIGN&#x2F;TRUNC)">
-<meta property="og:url" content="http://gogudtjq.github.io/2018/01/29/Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC/index.html">
+<meta property="og:title" content="문제풀이-Marathon(해시)">
+<meta property="og:url" content="http://gogudtjq.github.io/2018/02/07/문제풀이-marathon/index.html">
 <meta property="og:site_name" content="KHS blog">
-<meta property="og:description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;">
+<meta property="og:description" content="문제  수많은 마라톤 선수들이 마라톤에 참여하였습니다.단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때,완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.  제한사항  마라톤">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
-<meta property="og:updated_time" content="2018-01-29T06:58:10.342Z">
+<meta property="og:updated_time" content="2019-06-09T10:27:56.471Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle SQL 숫자함수(CEIL&#x2F;FLOOR&#x2F;MDD&#x2F;POWER&#x2F;ROUND&#x2F;SIGN&#x2F;TRUNC)">
-<meta name="twitter:description" content="CEIL 올림1SELECT CEIL(13.1) FROM DUAL;--&amp;gt; 결과: 14 FLOOR 내림1SELECT FLOOR(13.5) FROM DUAL; -- &amp;gt;결과 : 13 MOD 나눈 나머지1SELECT MOD(5, 3) FROM DUAL;   --&amp;gt; 결과 2 POWER 승수1SELECT POWER(2, 3) FROM DUAL; --&amp;">
-<meta name="twitter:image" content="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k">
+<meta name="twitter:title" content="문제풀이-Marathon(해시)">
+<meta name="twitter:description" content="문제  수많은 마라톤 선수들이 마라톤에 참여하였습니다.단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때,완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.  제한사항  마라톤">
 
 
   <link rel="alternative" href="/atom.xml" title="KHS blog" type="application/atom+xml">
@@ -141,41 +139,59 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-Oracle-SQL-숫자함수-CEIL-FLOOR-MDD-POWER-ROUND-SIGN-TRUNC" class="article article-type-post">
+          <article id="post-문제풀이-marathon" class="article article-type-post">
   
     <h1 class="article-header">
-      Oracle SQL 숫자함수(CEIL/FLOOR/MDD/POWER/ROUND/SIGN/TRUNC)
+      문제풀이-Marathon(해시)
     </h1>
   
   
 
   <div class="article-info">
     <span class="article-date">
-  2018-01-29
+  2018-02-07
 </span>
 
     
 	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Oracle-SQL/">Oracle SQL</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/CodingTest/">CodingTest</a></li></ul>
 	</span>
 
 
     
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL-숫자함수/">SQL 숫자함수</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CodingTest-2019-06-09/">CodingTest-2019/06/09</a></li></ul>
 	</span>
 
 
   </div>
   <div class="article-entry">
-    <p><img src="http://www.arabnews.com/sites/default/files/styles/ph3_660_400/public/30/08/2016//1472581485636653700.jpg?itok=JVei0u9k" alt=""></p>
-<p><strong>CEIL 올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CEIL</span>(<span class="number">13.1</span>) <span class="keyword">FROM</span> DUAL;<span class="comment">--&gt; 결과: 14</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>FLOOR 내림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">FLOOR</span>(<span class="number">13.5</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">-- &gt;결과 : 13</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>MOD 나눈 나머지</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MOD</span>(<span class="number">5</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL;   <span class="comment">--&gt; 결과 2</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>POWER 승수</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">POWER</span>(<span class="number">2</span>, <span class="number">3</span>) <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 8</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>ROUND 반올림</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">ROUND</span>(<span class="number">13.5</span>)  <span class="keyword">FROM</span> DUAL;</span><br></pre></td></tr></table></figure></p>
-<p><strong>SIGN 부호</strong><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SIGN</span>(<span class="number">13.4</span>) <span class="keyword">FROM</span> DUAL;  <span class="comment">--&gt;결과 1</span></span><br><span class="line">+ 일경우 결과 1</span><br><span class="line">0 일경우 결과 0</span><br><span class="line">- 일경우 결과 -1</span><br></pre></td></tr></table></figure></p>
-<p><strong>TRUNC 버림</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> TRUNC(<span class="number">13.123456</span>)  <span class="keyword">FROM</span> DUAL; <span class="comment">--&gt;결과 13</span></span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, 3) FROM DUAL; -&gt; 결과 13.123</span><br><span class="line"></span><br><span class="line">SELECT TRUNC(13.123456, -1) FROM DUAL; -&gt;결과 10</span><br></pre></td></tr></table></figure></p>
+    <p><strong>문제</strong></p>
+<blockquote>
+<p>수많은 마라톤 선수들이 마라톤에 참여하였습니다.<br>단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.<br>마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때,<br>완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.</p>
+</blockquote>
+<p><strong>제한사항</strong></p>
+<ul>
+<li>마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.</li>
+<li>completion의 길이는 participant의 길이보다 1 작습니다.</li>
+<li>참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.</li>
+<li>참가자 중에는 동명이인이 있을 수 있습니다.</li>
+</ul>
+<p><strong>입출력 ex )</strong><br>participant                    |            completion        |                    return<br>|:—|:—|:—:|<br>[leo, kiki, eden]        |                [eden, kiki]        |                leo<br>[marina, josipa, nikola, vinko, filipa]    |[josipa, filipa, marina, nikola]|    vinko<br>[mislav, stanko, mislav, ana]        |    [stanko, ana, mislav]            |    mislav</p>
+<p><strong>예제 #1</strong></p>
+<blockquote>
+<p>leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.</p>
+</blockquote>
+<p><strong>예제 #2</strong></p>
+<blockquote>
+<p>vinko는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.</p>
+</blockquote>
+<p><strong>예제 #3</strong></p>
+<blockquote>
+<p>mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.</p>
+</blockquote>
+<p><strong>나의 풀이</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">solution</span><span class="params">(String[] participant, String[] completion)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//participant 참가자</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//completion 완주자</span></span><br><span class="line"></span><br><span class="line">       <span class="comment">/*participant	completion	return</span></span><br><span class="line"><span class="comment">        [leo, kiki, eden]	[eden, kiki]	leo</span></span><br><span class="line"><span class="comment">        [marina, josipa, nikola, vinko, filipa]	[josipa, filipa, marina, nikola]	vinko</span></span><br><span class="line"><span class="comment">        [mislav, stanko, mislav, ana]	[stanko, ana, mislav]	mislav</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">if</span>(participant.length == <span class="number">0</span> || participant.length &gt; <span class="number">100000</span>)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"참가자수 확인"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(completion.length == <span class="number">0</span> || participant.length - <span class="number">1</span> != completion.length)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"완주자 확인"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		Arrays.sort(participant);</span><br><span class="line">		Arrays.sort(completion);</span><br><span class="line">        String answer = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; participant.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!participant[i].equals(completion[count]))&#123;</span><br><span class="line">				answer = participant[i];</span><br><span class="line">                <span class="keyword">return</span> answer;</span><br><span class="line">			&#125;</span><br><span class="line">            <span class="keyword">if</span>(completion.length-<span class="number">1</span> != count)</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>다른사람 풀이 참고</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">solution</span><span class="params">(String[] participant, String[] completion)</span> </span>&#123;</span><br><span class="line">        String answer = <span class="string">""</span>;</span><br><span class="line">        HashMap&lt;String, Integer&gt; hm = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (String player : participant) hm.put(player, hm.getOrDefault(player, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span> (String player : completion) hm.put(player, hm.get(player) - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (String key : hm.keySet()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (hm.get(key) != <span class="number">0</span>)&#123;</span><br><span class="line">                answer = key;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
   </div>
   <footer class="article-footer">
