@@ -422,7 +422,33 @@
 <li>참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.</li>
 <li>참가자 중에는 동명이인이 있을 수 있습니다.</li>
 </ul>
-<p><strong>입출력 ex )</strong><br>participant                    |            completion        |                    return<br>|:—|:—|:—:|<br>[leo, kiki, eden]        |                [eden, kiki]        |                leo<br>[marina, josipa, nikola, vinko, filipa]    |[josipa, filipa, marina, nikola]|    vinko<br>[mislav, stanko, mislav, ana]        |    [stanko, ana, mislav]            |    mislav</p>
+<p><strong>입출력 ex )</strong></p>
+<table>
+<thead>
+<tr>
+<th>participant</th>
+<th>completion</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ leo, kiki, eden ]</td>
+<td>[ eden, kiki ]</td>
+<td>leo</td>
+</tr>
+<tr>
+<td>[ marina, josipa, nikola, vinko, filipa ]</td>
+<td>[ josipa, filipa, marina, nikola ]</td>
+<td>vinko</td>
+</tr>
+<tr>
+<td>[ mislav, stanko, mislav, ana ]</td>
+<td>[ stanko, ana, mislav ]</td>
+<td>mislav</td>
+</tr>
+</tbody>
+</table>
 <p><strong>예제 #1</strong></p>
 <blockquote>
 <p>leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.</p>
@@ -437,6 +463,32 @@
 </blockquote>
 <p><strong>나의 풀이</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">solution</span><span class="params">(String[] participant, String[] completion)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//participant 참가자</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//completion 완주자</span></span><br><span class="line"></span><br><span class="line">       <span class="comment">/*participant	completion	return</span></span><br><span class="line"><span class="comment">        [leo, kiki, eden]	[eden, kiki]	leo</span></span><br><span class="line"><span class="comment">        [marina, josipa, nikola, vinko, filipa]	[josipa, filipa, marina, nikola]	vinko</span></span><br><span class="line"><span class="comment">        [mislav, stanko, mislav, ana]	[stanko, ana, mislav]	mislav</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">if</span>(participant.length == <span class="number">0</span> || participant.length &gt; <span class="number">100000</span>)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"참가자수 확인"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(completion.length == <span class="number">0</span> || participant.length - <span class="number">1</span> != completion.length)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"완주자 확인"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		Arrays.sort(participant);</span><br><span class="line">		Arrays.sort(completion);</span><br><span class="line">        String answer = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; participant.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!participant[i].equals(completion[count]))&#123;</span><br><span class="line">				answer = participant[i];</span><br><span class="line">                <span class="keyword">return</span> answer;</span><br><span class="line">			&#125;</span><br><span class="line">            <span class="keyword">if</span>(completion.length-<span class="number">1</span> != count)</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>다른사람 풀이 참고</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">solution</span><span class="params">(String[] participant, String[] completion)</span> </span>&#123;</span><br><span class="line">        String answer = <span class="string">""</span>;</span><br><span class="line">        HashMap&lt;String, Integer&gt; hm = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (String player : participant) hm.put(player, hm.getOrDefault(player, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span> (String player : completion) hm.put(player, hm.get(player) - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (String key : hm.keySet()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (hm.get(key) != <span class="number">0</span>)&#123;</span><br><span class="line">                answer = key;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>participant</th>
+<th>completion</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[leo, kiki, eden]</td>
+<td>[eden, kiki]</td>
+<td>leo</td>
+</tr>
+<tr>
+<td>[marina, josipa, nikola, vinko, filipa]</td>
+<td>[josipa, filipa, marina, nikola]</td>
+<td>vinko</td>
+</tr>
+<tr>
+<td>[mislav, stanko, mislav, ana]</td>
+<td>[stanko, ana, mislav]</td>
+<td>mislav</td>
+</tr>
+</tbody>
+</table>
 
         
       </div>
